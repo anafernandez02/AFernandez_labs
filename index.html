@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Cloud & AI Systems Engineer</title>
+    <meta name="description" content="Portfolio of an Aspiring Cloud & AI Engineer with a strong Systems Engineering background.">
+
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    },
+                    colors: {
+                        stone: {
+                            50: '#faf8f5',
+                            100: '#f5f2eb',
+                            200: '#e7e2d7',
+                            300: '#d5cdbc',
+                            400: '#a89c85',
+                            500: '#8c7e68',
+                            600: '#736552',
+                            700: '#5c5040',
+                            800: '#3d3429',
+                            900: '#262019',
+                            950: '#14100c',
+                        },
+                        terracotta: {
+                            50: '#fff7ed',
+                            100: '#ffedd5',
+                            200: '#fed7aa',
+                            300: '#fdba74',
+                            400: '#fb923c',
+                            500: '#f97316',
+                            600: '#ea580c',
+                            700: '#c2410c',
+                            800: '#9a3412',
+                            900: '#7c2d12',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Custom Scrollbar & Glassmorphism Utilities */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #d5cdbc;
+            border-radius: 9999px;
+        }
+        .dark ::-webkit-scrollbar-thumb {
+            background: #3d3429;
+        }
+        
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+        .dark .glass-card {
+            background: rgba(28, 25, 23, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+
+        .glass-nav {
+            background: rgba(250, 248, 245, 0.85);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+        }
+        .dark .glass-nav {
+            background: rgba(20, 16, 12, 0.85);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+        }
+    </style>
+</head>
+
+<body class="bg-stone-50 dark:bg-[#1c1917] text-stone-800 dark:text-stone-200 font-sans antialiased transition-colors duration-300 min-h-screen flex flex-col selection:bg-terracotta-200 selection:text-terracotta-900">
+
+    <!-- ========================================== -->
+    <!-- 1. HEADER / NAVIGATION BAR                 -->
+    <!-- ========================================== -->
+    <header class="sticky top-0 z-50 glass-nav border-b border-stone-200/60 dark:border-stone-800/60 transition-colors">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16 sm:h-20">
+                
+                <!-- Brand Logo / Initials Badge -->
+                <a href="#about" class="flex items-center gap-3 group">
+                    <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-terracotta-800 to-amber-600 text-white flex items-center justify-center font-bold text-lg shadow-md group-hover:scale-105 transition-transform">
+                        JV07
+                    </div>
+                    <span class="font-bold text-stone-900 dark:text-stone-100 text-lg tracking-tight">
+                        YOUR<span class="text-terracotta-800 dark:text-terracotta-500">NAME</span>
+                    </span>
+                </a>
+
+                <!-- Desktop Navigation Anchor Links -->
+                <nav class="hidden md:flex items-center gap-8 font-medium text-sm text-stone-600 dark:text-stone-400">
+                    <a href="#about" class="hover:text-terracotta-800 dark:hover:text-terracotta-500 transition-colors">About</a>
+                    <a href="#skills" class="hover:text-terracotta-800 dark:hover:text-terracotta-500 transition-colors">Skills</a>
+                    <a href="#projects" class="hover:text-terracotta-800 dark:hover:text-terracotta-500 transition-colors">Projects</a>
+                    <a href="#certifications" class="hover:text-terracotta-800 dark:hover:text-terracotta-500 transition-colors">Credentials</a>
+                    <a href="#contact" class="hover:text-terracotta-800 dark:hover:text-terracotta-500 transition-colors">Contact</a>
+                </nav>
+
+                <!-- Right Side Actions: Theme Toggle & Mobile Menu Button -->
+                <div class="flex items-center gap-3">
+                    <!-- Dark Mode Toggle Button -->
+                    <button id="themeToggle" aria-label="Toggle Dark Mode" class="p-2.5 rounded-xl bg-stone-200/50 dark:bg-stone-800/80 text-stone-700 dark:text-stone-300 hover:bg-stone-300/60 dark:hover:bg-stone-700 transition-colors shadow-sm">
+                        <i id="themeIconDark" class="fa-solid fa-moon text-sm hidden"></i>
+                        <i id="themeIconLight" class="fa-solid fa-sun text-sm hidden"></i>
+                    </button>
+
+                    <!-- Mobile Hamburger Toggle -->
+                    <button id="mobileMenuBtn" aria-label="Toggle Mobile Menu" class="md:hidden p-2.5 rounded-xl bg-stone-200/50 dark:bg-stone-800/80 text-stone-700 dark:text-stone-300 hover:bg-stone-300/60 dark:hover:bg-stone-700 transition-colors shadow-sm">
+                        <i class="fa-solid fa-bars text-sm"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Drawer -->
+        <div id="mobileMenu" class="hidden md:hidden border-b border-stone-200/60 dark:border-stone-800/60 bg-stone-50/95 dark:bg-[#1c1917]/95 px-4 pt-3 pb-6 space-y-2 font-medium shadow-lg absolute w-full">
+            <a href="#about" class="mobile-link block px-4 py-3 rounded-xl hover:bg-stone-200/50 dark:hover:bg-stone-800 transition-colors">About</a>
+            <a href="#skills" class="mobile-link block px-4 py-3 rounded-xl hover:bg-stone-200/50 dark:hover:bg-stone-800 transition-colors">Skills</a>
+            <a href="#projects" class="mobile-link block px-4 py-3 rounded-xl hover:bg-stone-200/50 dark:hover:bg-stone-800 transition-colors">Projects</a>
+            <a href="#certifications" class="mobile-link block px-4 py-3 rounded-xl hover:bg-stone-200/50 dark:hover:bg-stone-800 transition-colors">Credentials</a>
+            <a href="#contact" class="mobile-link block px-4 py-3 rounded-xl hover:bg-stone-200/50 dark:hover:bg-stone-800 transition-colors">Contact</a>
+        </div>
+    </header>
+
+    <!-- ========================================== -->
+    <!-- 2. HERO SECTION (#about)                   -->
+    <!-- ========================================== -->
+    <section id="about" class="py-20 sm:py-28 relative overflow-hidden flex-grow">
+        <!-- Soft Background Elements -->
+        <div class="absolute top-1/4 -right-20 w-96 h-96 bg-terracotta-200/20 dark:bg-terracotta-900/20 rounded-full blur-3xl -z-10"></div>
+        <div class="absolute bottom-10 left-10 w-72 h-72 bg-stone-300/30 dark:bg-stone-800/40 rounded-full blur-3xl -z-10"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col-reverse lg:flex-row items-center gap-12 lg:gap-16">
+                
+                <!-- Hero Content & Bio -->
+                <div class="flex-1 text-center lg:text-left space-y-7">
+                    
+                    <!-- Availability / Mindset Badge -->
+                    <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-stone-200/50 dark:bg-stone-800 border border-stone-300/50 dark:border-stone-700 text-stone-700 dark:text-stone-300 text-xs font-semibold shadow-sm tracking-wide uppercase">
+                        <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                        Open for Opportunities
+                    </div>
+
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-stone-900 dark:text-white tracking-tight leading-tight">
+                        Aspiring Cloud & AI Engineer <br>
+                        <span class="bg-gradient-to-r from-terracotta-800 to-amber-600 bg-clip-text text-transparent">Systems-Minded Problem Solver</span>
+                    </h1>
+
+                    <p class="text-base sm:text-lg text-stone-600 dark:text-stone-400 max-w-2xl mx-auto lg:mx-0 leading-relaxed font-medium">
+                        I bridge hardware-level logic, signal processing, and analytical system design into modern cloud architecture and intelligent workflows.
+                    </p>
+
+                    <!-- Featured Certification Badges Banner -->
+                    <div class="flex flex-wrap justify-center lg:justify-start gap-4 pt-2">
+                        <div class="flex items-center gap-3 px-4 py-2.5 rounded-2xl glass-card border border-stone-200 dark:border-stone-800 shadow-sm">
+                            <i class="fa-brands fa-aws text-amber-600 text-xl"></i>
+                            <span class="text-sm font-bold text-stone-800 dark:text-stone-200">AWS Cloud Practitioner Essentials</span>
+                        </div>
+                        <div class="flex items-center gap-3 px-4 py-2.5 rounded-2xl glass-card border border-stone-200 dark:border-stone-800 shadow-sm">
+                            <i class="fa-solid fa-brain text-blue-600 text-lg"></i>
+                            <span class="text-sm font-bold text-stone-800 dark:text-stone-200">IBM AI Foundations</span>
+                        </div>
+                    </div>
+
+                    <!-- CTAs & Social Links -->
+                    <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-4">
+                        <a href="#projects" class="px-7 py-3.5 rounded-xl bg-terracotta-800 hover:bg-terracotta-900 dark:bg-terracotta-700 dark:hover:bg-terracotta-600 text-white font-semibold shadow-lg shadow-terracotta-800/20 transition-all hover:-translate-y-0.5">
+                            Explore Projects
+                        </a>
+                        
+                        <!-- EDIT: Replace href below with your resume link -->
+                        <a href="[INSERT_RESUME_URL]" target="_blank" class="px-7 py-3.5 rounded-xl glass-card border border-stone-300 dark:border-stone-700 hover:border-terracotta-800 dark:hover:border-terracotta-500 font-semibold text-stone-800 dark:text-stone-200 transition-all hover:-translate-y-0.5 flex items-center gap-2">
+                            Download CV <i class="fa-solid fa-arrow-down text-sm"></i>
+                        </a>
+
+                        <!-- Social Links -->
+                        <div class="flex items-center gap-2 ml-0 sm:ml-4">
+                            <!-- EDIT: Add your github url -->
+                            <a href="[INSERT_GITHUB_URL]" target="_blank" aria-label="GitHub" class="p-3 rounded-xl glass-card border border-stone-200 dark:border-stone-800 hover:text-terracotta-800 dark:hover:text-terracotta-500 transition-colors">
+                                <i class="fa-brands fa-github text-lg"></i>
+                            </a>
+                            <!-- EDIT: Add your linkedin url -->
+                            <a href="[INSERT_LINKEDIN_URL]" target="_blank" aria-label="LinkedIn" class="p-3 rounded-xl glass-card border border-stone-200 dark:border-stone-800 hover:text-terracotta-800 dark:hover:text-terracotta-500 transition-colors">
+                                <i class="fa-brands fa-linkedin-in text-lg"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Profile Picture Container -->
+                <div class="relative shrink-0 mb-8 lg:mb-0">
+                    <div class="absolute -inset-4 rounded-full bg-gradient-to-tr from-terracotta-300 to-amber-200 dark:from-terracotta-900 dark:to-stone-800 opacity-40 blur-2xl"></div>
+                    
+                    <!-- EDIT: Replace image src below with your custom photo URL -->
+                    <img 
+                        src="[INSERT_PROFILE_IMAGE_URL]" 
+                        alt="Profile Photo" 
+                        onerror="this.onerror=null; this.src='https://placehold.co/200x200/e7e2d7/5c5040?text=Profile+Photo';"
+                        class="relative w-52 h-52 lg:w-72 lg:h-72 rounded-full object-cover border-[6px] border-white dark:border-stone-900 shadow-2xl z-10"
+                    >
+                    
+                    <!-- Floating Accent -->
+                    <div class="absolute -bottom-2 -right-4 glass-card px-4 py-2 rounded-2xl border border-stone-200 dark:border-stone-800 shadow-lg z-20 flex items-center gap-2">
+                        <i class="fa-solid fa-microchip text-terracotta-800 dark:text-terracotta-500 text-lg"></i>
+                        <span class="text-xs font-bold text-stone-800 dark:text-stone-200 uppercase">Open for Opportunities</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- 3. SKILLS & CAPABILITIES SECTION (#skills) -->
+    <!-- ========================================== -->
+    <section id="skills" class="py-20 bg-stone-100/50 dark:bg-stone-950 border-y border-stone-200/60 dark:border-stone-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Section Header -->
+            <div class="text-center max-w-2xl mx-auto mb-14 space-y-4">
+                <span class="text-xs font-bold uppercase tracking-widest text-terracotta-800 dark:text-terracotta-500">Technical Arsenal</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-stone-900 dark:text-white">
+                    Skills & Core Competencies
+                </h2>
+                <p class="text-stone-600 dark:text-stone-400 text-base">
+                    Combining systems engineering logic with modern cloud and AI principles to architect robust solutions.
+                </p>
+            </div>
+
+            <!-- Skill Filter Tab Interface -->
+            <div class="flex flex-wrap justify-center gap-3 mb-12">
+                <button class="skill-filter active px-5 py-2.5 rounded-xl text-sm font-semibold transition-all bg-terracotta-800 text-white shadow-md" data-filter="all">
+                    All Domains
+                </button>
+                <button class="skill-filter px-5 py-2.5 rounded-xl text-sm font-semibold transition-all bg-white dark:bg-stone-900 text-stone-700 dark:text-stone-300 hover:bg-stone-200 dark:hover:bg-stone-800 border border-stone-200 dark:border-stone-800" data-filter="cloud">
+                    Cloud Architecture
+                </button>
+                <button class="skill-filter px-5 py-2.5 rounded-xl text-sm font-semibold transition-all bg-white dark:bg-stone-900 text-stone-700 dark:text-stone-300 hover:bg-stone-200 dark:hover:bg-stone-800 border border-stone-200 dark:border-stone-800" data-filter="ai">
+                    AI & Automation
+                </button>
+                <button class="skill-filter px-5 py-2.5 rounded-xl text-sm font-semibold transition-all bg-white dark:bg-stone-900 text-stone-700 dark:text-stone-300 hover:bg-stone-200 dark:hover:bg-stone-800 border border-stone-200 dark:border-stone-800" data-filter="engineering">
+                    Engineering & Systems
+                </button>
+                <button class="skill-filter px-5 py-2.5 rounded-xl text-sm font-semibold transition-all bg-white dark:bg-stone-900 text-stone-700 dark:text-stone-300 hover:bg-stone-200 dark:hover:bg-stone-800 border border-stone-200 dark:border-stone-800" data-filter="web">
+                    Web & Tools
+                </button>
+            </div>
+
+            <!-- Skill Cards Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6" id="skillsContainer">
+                
+                <!-- Domain Card 1: Cloud Architecture -->
+                <div class="skill-card glass-card p-7 rounded-3xl border border-stone-200/80 dark:border-stone-800 shadow-sm space-y-5 hover:-translate-y-1 transition-transform" data-category="cloud">
+                    <div class="w-14 h-14 rounded-2xl bg-amber-100 dark:bg-amber-900/30 text-amber-700 dark:text-amber-500 flex items-center justify-center text-2xl">
+                        <i class="fa-brands fa-aws"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-stone-900 dark:text-white text-lg">Cloud & Infra</h3>
+                        <p class="text-sm text-stone-500 dark:text-stone-400 mt-1 font-medium">Core AWS Services</p>
+                    </div>
+                    <div class="flex flex-wrap gap-2 pt-2">
+                        <span class="px-3 py-1.5 rounded-lg bg-stone-100 dark:bg-stone-800 text-stone-800 dark:text-stone-200 text-xs font-semibold">AWS S3 & EC2</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-stone-100 dark:bg-stone-800 text-stone-800 dark:text-stone-200 text-xs font-semibold">IAM Governance</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-stone-100 dark:bg-stone-800 text-stone-800 dark:text-stone-200 text-xs font-semibold">CloudFront CDN</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-stone-100 dark:bg-stone-800 text-stone-800 dark:text-stone-200 text-xs font-semibold">Route 53</span>
+                    </div>
+                </div>
+
+                <!-- Domain Card 2: AI & Data Systems -->
+                <div class="skill-card glass-card p-7 rounded-3xl border border-stone-200/80 dark:border-stone-800 shadow-sm space-y-5 hover:-translate-y-1 transition-transform" data-category="ai">
+                    <div class="w-14 h-14 rounded-2xl bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-500 flex items-center justify-center text-2xl">
+                        <i class="fa-solid fa-network-wired"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-stone-900 dark:text-white text-lg">AI & Data</h3>
+                        <p class="text-sm text-stone-500 dark:text-stone-400 mt-1 font-medium">Intelligent Workflows</p>
+                    </div>
+                    <div class="flex flex-wrap gap-2 pt-2">
+                        <span class="px-3 py-1.5 rounded-lg bg-stone-100 dark:bg-stone-800 text-stone-800 dark:text-stone-200 text-xs font-semibold">IBM AI Foundations</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-stone-100 dark:bg-stone-800 text-stone-800 dark:text-stone-200 text-xs font-semibold">Prompt Engineering</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-stone-100 dark:bg-stone-800 text-stone-800 dark:text-stone-200 text-xs font-semibold">LLM APIs</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-stone-100 dark:bg-stone-800 text-stone-800 dark:text-stone-200 text-xs font-semibold">Python</span>
+                    </div>
+                </div>
+
+                <!-- Domain Card 3: Engineering & Systems -->
+                <div class="skill-card glass-card p-7 rounded-3xl border border-stone-200/80 dark:border-stone-800 shadow-sm space-y-5 hover:-translate-y-1 transition-transform" data-category="engineering">
+                    <div class="w-14 h-14 rounded-2xl bg-terracotta-100 dark:bg-terracotta-900/30 text-terracotta-800 dark:text-terracotta-500 flex items-center justify-center text-2xl">
+                        <i class="fa-solid fa-microchip"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-stone-900 dark:text-white text-lg">Systems Thinking</h3>
+                        <p class="text-sm text-stone-500 dark:text-stone-400 mt-1 font-medium">Engineering Logic</p>
+                    </div>
+                    <div class="flex flex-wrap gap-2 pt-2">
+                        <span class="px-3 py-1.5 rounded-lg bg-stone-100 dark:bg-stone-800 text-stone-800 dark:text-stone-200 text-xs font-semibold">Hardware Logic</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-stone-100 dark:bg-stone-800 text-stone-800 dark:text-stone-200 text-xs font-semibold">Signal/Data Flow</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-stone-100 dark:bg-stone-800 text-stone-800 dark:text-stone-200 text-xs font-semibold">Root-Cause Analysis</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-stone-100 dark:bg-stone-800 text-stone-800 dark:text-stone-200 text-xs font-semibold">Circuit Logic</span>
+                    </div>
+                </div>
+
+                <!-- Domain Card 4: Web & Tools -->
+                <div class="skill-card glass-card p-7 rounded-3xl border border-stone-200/80 dark:border-stone-800 shadow-sm space-y-5 hover:-translate-y-1 transition-transform" data-category="web">
+                    <div class="w-14 h-14 rounded-2xl bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-500 flex items-center justify-center text-2xl">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-stone-900 dark:text-white text-lg">Web & Tools</h3>
+                        <p class="text-sm text-stone-500 dark:text-stone-400 mt-1 font-medium">Frontend & Versioning</p>
+                    </div>
+                    <div class="flex flex-wrap gap-2 pt-2">
+                        <span class="px-3 py-1.5 rounded-lg bg-stone-100 dark:bg-stone-800 text-stone-800 dark:text-stone-200 text-xs font-semibold">HTML5/CSS3</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-stone-100 dark:bg-stone-800 text-stone-800 dark:text-stone-200 text-xs font-semibold">Tailwind CSS</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-stone-100 dark:bg-stone-800 text-stone-800 dark:text-stone-200 text-xs font-semibold">JavaScript</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-stone-100 dark:bg-stone-800 text-stone-800 dark:text-stone-200 text-xs font-semibold">Git & GitHub</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- 4. PROJECTS SHOWCASE SECTION (#projects)   -->
+    <!-- ========================================== -->
+    <section id="projects" class="py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-14">
+                <div class="space-y-4 max-w-2xl">
+                    <span class="text-xs font-bold uppercase tracking-widest text-terracotta-800 dark:text-terracotta-500">Portfolio</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-stone-900 dark:text-white">
+                        Featured Projects
+                    </h2>
+                    <p class="text-stone-600 dark:text-stone-400 text-base">
+                        Practical implementations demonstrating cloud architecture deployment, AI integrations, and responsive web development.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Projects Dynamic Grid (Rendered via JavaScript) -->
+            <div id="projectsGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 lg:gap-10">
+                <!-- Project cards injected dynamically via JavaScript below -->
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- 5. JOURNEY & CREDENTIALS (#certifications) -->
+    <!-- ========================================== -->
+    <section id="certifications" class="py-20 bg-stone-100/50 dark:bg-stone-950 border-y border-stone-200/60 dark:border-stone-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-2xl mx-auto mb-16 space-y-4">
+                <span class="text-xs font-bold uppercase tracking-widest text-terracotta-800 dark:text-terracotta-500">Milestones</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-stone-900 dark:text-white">
+                    Journey & Credentials
+                </h2>
+                <p class="text-stone-600 dark:text-stone-400 text-base">
+                    Tracing the evolution from academic engineering roots to specialized credentials in Cloud and AI.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-12 items-start">
+                
+                <!-- Timeline Column -->
+                <div class="space-y-8">
+                    <h3 class="text-2xl font-bold text-stone-900 dark:text-white flex items-center gap-3">
+                        <i class="fa-solid fa-route text-terracotta-800 dark:text-terracotta-500"></i> Engineering Evolution
+                    </h3>
+
+                    <div class="relative border-l-2 border-stone-300 dark:border-stone-700 ml-4 space-y-10 py-2">
+                        
+                        <!-- Timeline Item 1 -->
+                        <div class="relative pl-8">
+                            <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-terracotta-500 border-4 border-stone-100 dark:border-stone-950 shadow-sm"></div>
+                            <span class="text-xs font-bold text-terracotta-800 dark:text-terracotta-500 uppercase tracking-wider block mb-1">Present</span>
+                            <h4 class="text-xl font-bold text-stone-900 dark:text-white mb-2">Cloud & AI Specialization</h4>
+                            <p class="text-sm text-stone-600 dark:text-stone-400 leading-relaxed bg-white dark:bg-stone-900 p-5 rounded-2xl border border-stone-200 dark:border-stone-800 shadow-sm">
+                                Actively building practical cloud architectures on AWS and integrating IBM AI foundations into web-based applications. Focusing on scalable, serverless, and intelligent solutions.
+                            </p>
+                        </div>
+
+                        <!-- Timeline Item 2 -->
+                        <div class="relative pl-8">
+                            <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-stone-400 dark:bg-stone-600 border-4 border-stone-100 dark:border-stone-950 shadow-sm"></div>
+                            <span class="text-xs font-bold text-stone-500 dark:text-stone-400 uppercase tracking-wider block mb-1">Foundation</span>
+                            <h4 class="text-xl font-bold text-stone-900 dark:text-white mb-2">Engineering & Systems (ECE)</h4>
+                            <p class="text-sm text-stone-600 dark:text-stone-400 leading-relaxed bg-white dark:bg-stone-900 p-5 rounded-2xl border border-stone-200 dark:border-stone-800 shadow-sm">
+                                Developed a rigorous analytical mindset studying hardware logic, circuit design, and signal flow. This hardware-first understanding provides a unique, deep-level perspective on modern software and cloud infrastructure.
+                            </p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Certifications Column -->
+                <div class="space-y-8">
+                    <h3 class="text-2xl font-bold text-stone-900 dark:text-white flex items-center gap-3">
+                        <i class="fa-solid fa-award text-terracotta-800 dark:text-terracotta-500"></i> Verified Credentials
+                    </h3>
+
+                    <div class="space-y-5">
+                        
+                        <!-- Certification 1: AWS -->
+                        <div class="glass-card p-6 sm:p-8 rounded-3xl border border-stone-200 dark:border-stone-800 shadow-sm flex flex-col sm:flex-row items-start gap-5 hover:-translate-y-1 transition-transform">
+                            <div class="w-16 h-16 rounded-2xl bg-amber-100 dark:bg-amber-900/30 text-amber-600 flex items-center justify-center text-3xl shrink-0">
+                                <i class="fa-brands fa-aws"></i>
+                            </div>
+                            <div class="flex-1 space-y-3">
+                                <div>
+                                    <div class="flex items-center gap-2 mb-1">
+                                        <h4 class="font-bold text-stone-900 dark:text-white text-lg leading-tight">AWS Cloud Practitioner Essentials</h4>
+                                    </div>
+                                    <p class="text-xs font-semibold text-amber-700 dark:text-amber-500 uppercase tracking-wide">Amazon Web Services</p>
+                                </div>
+                                <p class="text-sm text-stone-600 dark:text-stone-400 leading-relaxed">
+                                    Validated understanding of AWS Cloud concepts, core services, security, architecture, pricing, and support.
+                                </p>
+                                <!-- EDIT: Replace href below with actual credential link -->
+                                <a href="[INSERT_CREDENTIAL_URL]" target="_blank" class="inline-flex items-center gap-2 text-sm font-bold text-terracotta-800 dark:text-terracotta-500 hover:text-terracotta-600 transition-colors">
+                                    Verify Credential <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Certification 2: IBM AI -->
+                        <div class="glass-card p-6 sm:p-8 rounded-3xl border border-stone-200 dark:border-stone-800 shadow-sm flex flex-col sm:flex-row items-start gap-5 hover:-translate-y-1 transition-transform">
+                            <div class="w-16 h-16 rounded-2xl bg-blue-100 dark:bg-blue-900/30 text-blue-600 flex items-center justify-center text-3xl shrink-0">
+                                <i class="fa-solid fa-brain"></i>
+                            </div>
+                            <div class="flex-1 space-y-3">
+                                <div>
+                                    <h4 class="font-bold text-stone-900 dark:text-white text-lg leading-tight mb-1">IBM AI Foundations</h4>
+                                    <p class="text-xs font-semibold text-blue-700 dark:text-blue-500 uppercase tracking-wide">IBM</p>
+                                </div>
+                                <p class="text-sm text-stone-600 dark:text-stone-400 leading-relaxed">
+                                    Mastery of AI methodologies, including machine learning, generative AI, prompt engineering, and AI ethics.
+                                </p>
+                                <!-- EDIT: Replace href below with actual credential link -->
+                                <a href="[INSERT_CREDENTIAL_URL]" target="_blank" class="inline-flex items-center gap-2 text-sm font-bold text-terracotta-800 dark:text-terracotta-500 hover:text-terracotta-600 transition-colors">
+                                    Verify Credential <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ========================================== -->
+    <!-- 6. CONTACT SECTION & FOOTER (#contact)     -->
+    <!-- ========================================== -->
+    <section id="contact" class="py-20 relative">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center mb-12 space-y-4">
+                <span class="text-xs font-bold uppercase tracking-widest text-terracotta-800 dark:text-terracotta-500">Connect</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-stone-900 dark:text-white">
+                    Let's Build Something
+                </h2>
+                <p class="text-stone-600 dark:text-stone-400 text-base max-w-2xl mx-auto">
+                    Interested in cloud architecture, AI integrations, or discussing engineering problems? I am actively looking for new opportunities and collaborations.
+                </p>
+            </div>
+
+            <div class="glass-card p-8 sm:p-10 rounded-[2rem] border border-stone-200 dark:border-stone-800 shadow-xl">
+                
+                <!-- EDIT: Replace action URL with your Formspree endpoint -->
+                <form action="[INSERT_FORMSPREE_ENDPOINT_URL]" method="POST" class="space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="space-y-2">
+                            <label for="name" class="text-xs font-bold uppercase tracking-wide text-stone-700 dark:text-stone-300">Name</label>
+                            <input type="text" id="name" name="name" required placeholder="Jane Doe" class="w-full px-5 py-3.5 rounded-xl bg-white dark:bg-[#1c1917] border border-stone-200 dark:border-stone-700 focus:outline-none focus:ring-2 focus:ring-terracotta-500 text-sm text-stone-900 dark:text-white transition-all shadow-sm">
+                        </div>
+                        <div class="space-y-2">
+                            <label for="email" class="text-xs font-bold uppercase tracking-wide text-stone-700 dark:text-stone-300">Email Address</label>
+                            <input type="email" id="email" name="email" required placeholder="jane@example.com" class="w-full px-5 py-3.5 rounded-xl bg-white dark:bg-[#1c1917] border border-stone-200 dark:border-stone-700 focus:outline-none focus:ring-2 focus:ring-terracotta-500 text-sm text-stone-900 dark:text-white transition-all shadow-sm">
+                        </div>
+                    </div>
+
+                    <div class="space-y-2">
+                        <label for="message" class="text-xs font-bold uppercase tracking-wide text-stone-700 dark:text-stone-300">Message</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="How can we collaborate?" class="w-full px-5 py-3.5 rounded-xl bg-white dark:bg-[#1c1917] border border-stone-200 dark:border-stone-700 focus:outline-none focus:ring-2 focus:ring-terracotta-500 text-sm text-stone-900 dark:text-white transition-all shadow-sm resize-none"></textarea>
+                    </div>
+
+                    <button type="submit" class="w-full px-8 py-4 rounded-xl bg-terracotta-800 hover:bg-terracotta-900 dark:bg-terracotta-700 dark:hover:bg-terracotta-600 text-white font-bold tracking-wide transition-all active:scale-[0.98] shadow-md shadow-terracotta-800/20 flex items-center justify-center gap-3">
+                        Send Message <i class="fa-solid fa-paper-plane text-sm"></i>
+                    </button>
+                </form>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Minimal Footer -->
+    <footer class="py-8 border-t border-stone-200 dark:border-stone-800 bg-stone-100/50 dark:bg-stone-950 mt-auto">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-4 text-xs font-medium text-stone-500 dark:text-stone-400">
+            <p>Built with Engineering Passion &bull; Hosted on GitHub Pages</p>
+            <div class="flex items-center gap-6">
+                <!-- EDIT: Add your github url -->
+                <a href="[INSERT_GITHUB_URL]" target="_blank" class="hover:text-terracotta-800 dark:hover:text-terracotta-500 transition-colors flex items-center gap-2">
+                    <i class="fa-brands fa-github text-sm"></i> GitHub
+                </a>
+                <!-- EDIT: Add your linkedin url -->
+                <a href="[INSERT_LINKEDIN_URL]" target="_blank" class="hover:text-terracotta-800 dark:hover:text-terracotta-500 transition-colors flex items-center gap-2">
+                    <i class="fa-brands fa-linkedin-in text-sm"></i> LinkedIn
+                </a>
+                <a href="#about" class="hover:text-terracotta-800 dark:hover:text-terracotta-500 transition-colors">
+                    Back to top <i class="fa-solid fa-arrow-up text-[10px] ml-1"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========================================== -->
+    <!-- 7. JAVASCRIPT & DATA CONTROLLER            -->
+    <!-- ========================================== -->
+    <script>
+        /* =================================================================
+           PROJECTS DATA SCHEMA
+           EDIT: Add or modify your projects below!
+           ================================================================= */
+        const projectsData = [
+            {
+                title: "AWS Cloud Static Host Solution",
+                category: "Cloud Architecture",
+                description: "Deployed a high-availability static site architecture utilizing AWS S3 bucket web hosting, CloudFront CDN distribution for edge caching, and Route 53 for robust DNS routing.",
+                tags: ["AWS S3", "CloudFront", "Route 53", "HTML/Tailwind"],
+                /* EDIT: Project image URL */
+                image: "[INSERT_PROJECT_1_IMAGE_URL]",
+                links: {
+                    /* EDIT: Project URLs */
+                    demo: "[INSERT_PROJECT_1_DEMO_URL]",
+                    github: "[INSERT_PROJECT_1_GITHUB_URL]",
+                    docs: "[INSERT_PROJECT_1_DOCS_URL]"
+                }
+            },
+            {
+                title: "AI Document Summarization Assistant",
+                category: "AI & Automation",
+                description: "Built a browser-based AI tool applying IBM AI concepts to parse dense engineering documents and generate concise, structured summaries via REST API integration with an LLM backend.",
+                tags: ["IBM AI", "JavaScript", "Tailwind CSS", "REST API"],
+                /* EDIT: Project image URL */
+                image: "[INSERT_PROJECT_2_IMAGE_URL]",
+                links: {
+                    /* EDIT: Project URLs */
+                    demo: "[INSERT_PROJECT_2_DEMO_URL]",
+                    github: "[INSERT_PROJECT_2_GITHUB_URL]",
+                    docs: ""
+                }
+            }
+        ];
+
+        /* =================================================================
+           PROJECT RENDERING LOGIC
+           ================================================================= */
+        function renderProjects() {
+            const grid = document.getElementById('projectsGrid');
+            grid.innerHTML = projectsData.map(project => {
+                
+                // Helper to build links only if they aren't placeholder templates
+                const renderLink = (url, icon, text, primary = false) => {
+                    if(!url || url.includes('[INSERT_')) return '';
+                    const baseClass = primary 
+                        ? "px-4 py-2 rounded-lg bg-terracotta-800 hover:bg-terracotta-900 text-white text-xs font-bold transition-colors shadow-sm flex items-center gap-2"
+                        : "px-4 py-2 rounded-lg bg-stone-200 hover:bg-stone-300 dark:bg-stone-800 dark:hover:bg-stone-700 text-stone-800 dark:text-white text-xs font-bold transition-colors flex items-center gap-2";
+                    return `<a href="${url}" target="_blank" class="${baseClass}"><i class="${icon}"></i> ${text}</a>`;
+                };
+
+                // Fallback image if placeholder
+                const imgSrc = project.image.includes('[INSERT_') 
+                    ? 'https://placehold.co/600x400/e7e2d7/3d3429?text=Project+Preview' 
+                    : project.image;
+
+                return `
+                    <div class="glass-card rounded-[2rem] border border-stone-200 dark:border-stone-800 overflow-hidden shadow-lg hover:-translate-y-1.5 transition-transform duration-300 flex flex-col group">
+                        <!-- Image Area -->
+                        <div class="relative h-56 sm:h-64 bg-stone-300 dark:bg-stone-900 overflow-hidden">
+                            <img src="${imgSrc}" alt="${project.title}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <div class="absolute top-4 left-4 px-3 py-1.5 rounded-full bg-white/90 dark:bg-[#1c1917]/90 backdrop-blur-md text-stone-900 dark:text-white text-[10px] font-bold tracking-wider uppercase border border-stone-200/50 dark:border-stone-700/50 shadow-sm">
+                                ${project.category}
+                            </div>
+                        </div>
+
+                        <!-- Content Area -->
+                        <div class="p-6 sm:p-8 flex-1 flex flex-col justify-between space-y-6">
+                            <div class="space-y-3">
+                                <h3 class="font-extrabold text-stone-900 dark:text-white text-xl sm:text-2xl">${project.title}</h3>
+                                <p class="text-sm text-stone-600 dark:text-stone-400 leading-relaxed font-medium">${project.description}</p>
+                            </div>
+
+                            <div class="space-y-5">
+                                <!-- Tags -->
+                                <div class="flex flex-wrap gap-2">
+                                    ${project.tags.map(tag => `<span class="px-2.5 py-1 rounded-lg bg-stone-100 dark:bg-stone-900 border border-stone-200 dark:border-stone-800 text-stone-700 dark:text-stone-300 text-[10px] font-bold uppercase tracking-wider">${tag}</span>`).join('')}
+                                </div>
+                                
+                                <!-- Links -->
+                                <div class="flex flex-wrap gap-3 pt-2">
+                                    ${renderLink(project.links.demo, "fa-solid fa-arrow-up-right-from-square", "Live Demo", true)}
+                                    ${renderLink(project.links.github, "fa-brands fa-github text-sm", "Source Code")}
+                                    ${renderLink(project.links.docs, "fa-solid fa-file-lines", "Case Study")}
+                                    
+                                    ${(!project.links.demo || project.links.demo.includes('[INSERT_')) && 
+                                      (!project.links.github || project.links.github.includes('[INSERT_')) ? 
+                                      `<span class="text-xs font-semibold text-stone-400 italic py-2">Links coming soon. Update placeholders in code.</span>` : ''}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            });
+        }
+
+        /* =================================================================
+           SKILLS FILTER LOGIC
+           ================================================================= */
+        function initSkillsFilter() {
+            const buttons = document.querySelectorAll('.skill-filter');
+            const cards = document.querySelectorAll('.skill-card');
+
+            buttons.forEach(button => {
+                button.addEventListener('click', () => {
+                    // Update active button styling
+                    buttons.forEach(btn => {
+                        btn.classList.remove('bg-terracotta-800', 'text-white', 'shadow-md');
+                        btn.classList.add('bg-white', 'dark:bg-stone-900', 'text-stone-700', 'dark:text-stone-300');
+                    });
+                    button.classList.remove('bg-white', 'dark:bg-stone-900', 'text-stone-700', 'dark:text-stone-300');
+                    button.classList.add('bg-terracotta-800', 'text-white', 'shadow-md');
+
+                    // Filter cards
+                    const filter = button.getAttribute('data-filter');
+                    cards.forEach(card => {
+                        if (filter === 'all' || card.getAttribute('data-category') === filter) {
+                            card.style.display = 'block';
+                            // small animation trick
+                            card.style.opacity = '0';
+                            setTimeout(() => card.style.opacity = '1', 50);
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        }
+
+        /* =================================================================
+           THEME TOGGLE & MOBILE MENU
+           ================================================================= */
+        const themeBtn = document.getElementById('themeToggle');
+        const iconDark = document.getElementById('themeIconDark');
+        const iconLight = document.getElementById('themeIconLight');
+        
+        function updateThemeUI(isDark) {
+            if (isDark) {
+                document.documentElement.classList.add('dark');
+                iconDark.classList.add('hidden');
+                iconLight.classList.remove('hidden');
+            } else {
+                document.documentElement.classList.remove('dark');
+                iconLight.classList.add('hidden');
+                iconDark.classList.remove('hidden');
+            }
+        }
+
+        function initTheme() {
+            const isDark = localStorage.getItem('theme') === 'dark' || 
+                           (!localStorage.getItem('theme') && window.matchMedia('(prefers-color-scheme: dark)').matches);
+            updateThemeUI(isDark);
+        }
+
+        themeBtn.addEventListener('click', () => {
+            const willBeDark = !document.documentElement.classList.contains('dark');
+            updateThemeUI(willBeDark);
+            localStorage.setItem('theme', willBeDark ? 'dark' : 'light');
+        });
+
+        // Mobile Menu
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        /* Initialize everything on load */
+        document.addEventListener('DOMContentLoaded', () => {
+            initTheme();
+            initSkillsFilter();
+            renderProjects();
+        });
+    </script>
+</body>
+</html>
