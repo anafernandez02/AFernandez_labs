@@ -3,52 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Cloud & AI Systems Engineer</title>
-    <meta name="description" content="Portfolio of an Aspiring Cloud & AI Engineer with a strong Systems Engineering background.">
-
-    <!-- Google Fonts: Plus Jakarta Sans -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-
-    <!-- FontAwesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Portfolio | Driven Career Shifter & IT Specialist</title>
 
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- FontAwesome Icons CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Google Fonts: Plus Jakarta Sans & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Tailwind Configuration for Soft Neutral / Blush Theme -->
     <script>
         tailwind.config = {
             darkMode: 'class',
             theme: {
                 extend: {
                     fontFamily: {
-                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        sans: ['Plus Jakarta Sans', 'Inter', 'sans-serif'],
                     },
                     colors: {
-                        stone: {
-                            50: '#faf8f5',
-                            100: '#f5f2eb',
-                            200: '#e7e2d7',
-                            300: '#d5cdbc',
-                            400: '#a89c85',
-                            500: '#8c7e68',
-                            600: '#736552',
-                            700: '#5c5040',
-                            800: '#3d3429',
-                            900: '#262019',
-                            950: '#14100c',
+                        blush: {
+                            50: '#fff1f2',
+                            100: '#ffe4e6',
+                            200: '#fecdd3',
+                            300: '#fda4af',
+                            400: '#fb7185',
+                            500: '#f43f5e',
+                            600: '#e11d48',
+                            700: '#be123c',
+                            800: '#9f1239',
+                            900: '#881337',
                         },
-                        terracotta: {
-                            50: '#fff7ed',
-                            100: '#ffedd5',
-                            200: '#fed7aa',
-                            300: '#fdba74',
-                            400: '#fb923c',
-                            500: '#f97316',
-                            600: '#ea580c',
-                            700: '#c2410c',
-                            800: '#9a3412',
-                            900: '#7c2d12',
+                        warm: {
+                            50: '#fafaf9',
+                            100: '#f5f5f4',
+                            200: '#e7e5e4',
+                            700: '#44403c',
+                            800: '#292524',
+                            900: '#1c1917',
                         }
                     }
                 }
@@ -57,7 +53,30 @@
     </script>
 
     <style>
-        /* Custom Scrollbar & Glassmorphism Utilities */
+        /* Custom Soft Glassmorphism Effects */
+        .glass-card {
+            background: rgba(255, 255, 255, 0.82);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(254, 205, 211, 0.6);
+        }
+        .dark .glass-card {
+            background: rgba(15, 23, 42, 0.8);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(244, 63, 94, 0.15);
+        }
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.88);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+        .dark .glass-nav {
+            background: rgba(15, 23, 42, 0.88);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+        /* Custom Smooth Scrollbar */
         ::-webkit-scrollbar {
             width: 8px;
         }
@@ -65,676 +84,881 @@
             background: transparent;
         }
         ::-webkit-scrollbar-thumb {
-            background: #d5cdbc;
+            background: #fda4af;
             border-radius: 9999px;
         }
         .dark ::-webkit-scrollbar-thumb {
-            background: #3d3429;
-        }
-        
-        .glass-card {
-            background: rgba(255, 255, 255, 0.7);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-        }
-        .dark .glass-card {
-            background: rgba(28, 25, 23, 0.7);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-        }
-
-        .glass-nav {
-            background: rgba(250, 248, 245, 0.85);
-            backdrop-filter: blur(16px);
-            -webkit-backdrop-filter: blur(16px);
-        }
-        .dark .glass-nav {
-            background: rgba(20, 16, 12, 0.85);
-            backdrop-filter: blur(16px);
-            -webkit-backdrop-filter: blur(16px);
+            background: #475569;
         }
     </style>
 </head>
 
-<body class="bg-stone-50 dark:bg-[#1c1917] text-stone-800 dark:text-stone-200 font-sans antialiased transition-colors duration-300 min-h-screen flex flex-col selection:bg-terracotta-200 selection:text-terracotta-900">
+<body class="bg-gradient-to-br from-rose-50/50 via-slate-50 to-pink-50/30 dark:from-slate-950 dark:via-stone-950 dark:to-slate-900 text-slate-800 dark:text-slate-100 transition-colors duration-300 font-sans min-h-screen flex flex-col justify-between selection:bg-blush-200 selection:text-blush-900">
 
-    <!-- ========================================== -->
-    <!-- 1. HEADER / NAVIGATION BAR                 -->
-    <!-- ========================================== -->
-    <header class="sticky top-0 z-50 glass-nav border-b border-stone-200/60 dark:border-stone-800/60 transition-colors">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-16 sm:h-20">
-                
-                <!-- Brand Logo / Initials Badge -->
-                <a href="#about" class="flex items-center gap-3 group">
-                    <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-terracotta-800 to-amber-600 text-white flex items-center justify-center font-bold text-lg shadow-md group-hover:scale-105 transition-transform">
-                        AVF02
-                    </div>
-                    <span class="font-bold text-stone-900 dark:text-stone-100 text-lg tracking-tight">
-                        Ana<span class="text-terracotta-800 dark:text-terracotta-500">Fernandez</span>
-                    </span>
+    <!-- ========================================================================= -->
+    <!-- 1. NAVIGATION BAR                                                         -->
+    <!-- ========================================================================= -->
+    <header class="sticky top-0 z-50 glass-nav border-b border-rose-100/80 dark:border-slate-800/80 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            
+            <!-- Brand Logo / Badge -->
+            <a href="#about" class="flex items-center gap-2.5 group">
+                <!-- EDIT: [YOUR_INITIALS] e.g. "JV" -->
+                <div class="w-10 h-10 rounded-2xl bg-gradient-to-tr from-blush-500 via-rose-400 to-pink-300 text-white flex items-center justify-center font-bold text-sm shadow-md shadow-blush-200 dark:shadow-none group-hover:scale-105 transition-transform">
+                    JA
+                </div>
+                <span class="font-bold text-base tracking-tight bg-gradient-to-r from-slate-900 via-blush-800 to-slate-700 dark:from-white dark:via-blush-300 dark:to-slate-300 bg-clip-text text-transparent">
+                    <!-- EDIT: [YOUR_NAME_OR_PORTFOLIO_TITLE] -->
+                    Joanna Alinio/Crafts<span class="text-blush-500 dark:text-blush-400">.tech</span>
+                </span>
+            </a>
+
+            <!-- Desktop Navigation Links -->
+            <nav class="hidden md:flex items-center gap-7 font-medium text-xs tracking-wide text-slate-600 dark:text-slate-300 uppercase">
+                <a href="#about" class="hover:text-blush-600 dark:hover:text-blush-400 transition-colors">About</a>
+                <a href="#skills" class="hover:text-blush-600 dark:hover:text-blush-400 transition-colors">Skills</a>
+                <a href="#projects" class="hover:text-blush-600 dark:hover:text-blush-400 transition-colors">Projects</a>
+                <a href="#certifications" class="hover:text-blush-600 dark:hover:text-blush-400 transition-colors">Certifications</a>
+                <a href="#contact" class="hover:text-blush-600 dark:hover:text-blush-400 transition-colors">Contact</a>
+            </nav>
+
+            <!-- Actions Right: Theme Toggle & GitHub Link -->
+            <div class="flex items-center gap-3">
+                <!-- Dark Mode Toggle Button -->
+                <button id="theme-toggle" aria-label="Toggle Dark Mode" class="p-2.5 rounded-2xl bg-rose-100/60 dark:bg-slate-800/80 text-slate-700 dark:text-slate-300 hover:bg-rose-200/60 dark:hover:bg-slate-700 transition-colors shadow-sm">
+                    <i id="theme-toggle-dark-icon" class="fas fa-moon hidden text-sm"></i>
+                    <i id="theme-toggle-light-icon" class="fas fa-sun hidden text-sm"></i>
+                </button>
+
+                <!-- EDIT: [YOUR_GITHUB_PROFILE_URL] -->
+                <a href="https://github.com/jalinio" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile" class="hidden sm:flex items-center gap-2 px-4 py-2 rounded-2xl bg-slate-900 text-white dark:bg-slate-800 hover:bg-slate-800 dark:hover:bg-slate-700 transition-all text-xs font-semibold shadow-sm">
+                    <i class="fab fa-github text-sm"></i>
+                    <span>GitHub</span>
                 </a>
 
-                <!-- Desktop Navigation Anchor Links -->
-                <nav class="hidden md:flex items-center gap-8 font-medium text-sm text-stone-600 dark:text-stone-400">
-                    <a href="#about" class="hover:text-terracotta-800 dark:hover:text-terracotta-500 transition-colors">About</a>
-                    <a href="#skills" class="hover:text-terracotta-800 dark:hover:text-terracotta-500 transition-colors">Skills</a>
-                    <a href="#projects" class="hover:text-terracotta-800 dark:hover:text-terracotta-500 transition-colors">Projects</a>
-                    <a href="#certifications" class="hover:text-terracotta-800 dark:hover:text-terracotta-500 transition-colors">Credentials</a>
-                    <a href="#contact" class="hover:text-terracotta-800 dark:hover:text-terracotta-500 transition-colors">Contact</a>
-                </nav>
-
-                <!-- Right Side Actions: Theme Toggle & Mobile Menu Button -->
-                <div class="flex items-center gap-3">
-                    <!-- Dark Mode Toggle Button -->
-                    <button id="themeToggle" aria-label="Toggle Dark Mode" class="p-2.5 rounded-xl bg-stone-200/50 dark:bg-stone-800/80 text-stone-700 dark:text-stone-300 hover:bg-stone-300/60 dark:hover:bg-stone-700 transition-colors shadow-sm">
-                        <i id="themeIconDark" class="fa-solid fa-moon text-sm hidden"></i>
-                        <i id="themeIconLight" class="fa-solid fa-sun text-sm hidden"></i>
-                    </button>
-
-                    <!-- Mobile Hamburger Toggle -->
-                    <button id="mobileMenuBtn" aria-label="Toggle Mobile Menu" class="md:hidden p-2.5 rounded-xl bg-stone-200/50 dark:bg-stone-800/80 text-stone-700 dark:text-stone-300 hover:bg-stone-300/60 dark:hover:bg-stone-700 transition-colors shadow-sm">
-                        <i class="fa-solid fa-bars text-sm"></i>
-                    </button>
-                </div>
+                <!-- Mobile Hamburger Button -->
+                <button id="mobile-menu-btn" aria-label="Open Navigation Menu" class="md:hidden p-2.5 rounded-2xl text-slate-700 dark:text-slate-300 hover:bg-rose-100/60 dark:hover:bg-slate-800">
+                    <i class="fas fa-bars text-base"></i>
+                </button>
             </div>
         </div>
 
         <!-- Mobile Navigation Drawer -->
-        <div id="mobileMenu" class="hidden md:hidden border-b border-stone-200/60 dark:border-stone-800/60 bg-stone-50/95 dark:bg-[#1c1917]/95 px-4 pt-3 pb-6 space-y-2 font-medium shadow-lg absolute w-full">
-            <a href="#about" class="mobile-link block px-4 py-3 rounded-xl hover:bg-stone-200/50 dark:hover:bg-stone-800 transition-colors">About</a>
-            <a href="#skills" class="mobile-link block px-4 py-3 rounded-xl hover:bg-stone-200/50 dark:hover:bg-stone-800 transition-colors">Skills</a>
-            <a href="#projects" class="mobile-link block px-4 py-3 rounded-xl hover:bg-stone-200/50 dark:hover:bg-stone-800 transition-colors">Projects</a>
-            <a href="#certifications" class="mobile-link block px-4 py-3 rounded-xl hover:bg-stone-200/50 dark:hover:bg-stone-800 transition-colors">Credentials</a>
-            <a href="#contact" class="mobile-link block px-4 py-3 rounded-xl hover:bg-stone-200/50 dark:hover:bg-stone-800 transition-colors">Contact</a>
+        <div id="mobile-menu" class="hidden md:hidden border-t border-rose-100 dark:border-slate-800 bg-white/95 dark:bg-slate-900/95 backdrop-blur-lg px-4 pt-3 pb-6 space-y-3">
+            <a href="#about" class="mobile-nav-link block py-2.5 px-4 rounded-xl text-slate-700 dark:text-slate-300 hover:bg-rose-50 dark:hover:bg-slate-800 font-medium text-sm">About</a>
+            <a href="#skills" class="mobile-nav-link block py-2.5 px-4 rounded-xl text-slate-700 dark:text-slate-300 hover:bg-rose-50 dark:hover:bg-slate-800 font-medium text-sm">Skills</a>
+            <a href="#projects" class="mobile-nav-link block py-2.5 px-4 rounded-xl text-slate-700 dark:text-slate-300 hover:bg-rose-50 dark:hover:bg-slate-800 font-medium text-sm">Projects</a>
+            <a href="#certifications" class="mobile-nav-link block py-2.5 px-4 rounded-xl text-slate-700 dark:text-slate-300 hover:bg-rose-50 dark:hover:bg-slate-800 font-medium text-sm">Certifications</a>
+            <a href="#contact" class="mobile-nav-link block py-2.5 px-4 rounded-xl text-slate-700 dark:text-slate-300 hover:bg-rose-50 dark:hover:bg-slate-800 font-medium text-sm">Contact</a>
+            <!-- EDIT: [YOUR_GITHUB_PROFILE_URL] -->
+            <a href="https://github.com/jalinio" target="_blank" rel="noopener" class="block py-2.5 px-4 rounded-xl bg-blush-500 text-white text-center font-medium text-sm shadow-sm">
+                <i class="fab fa-github mr-2"></i> Visit GitHub Profile
+            </a>
         </div>
     </header>
 
-    <!-- ========================================== -->
-    <!-- 2. HERO SECTION (#about)                   -->
-    <!-- ========================================== -->
-    <section id="about" class="py-20 sm:py-28 relative overflow-hidden flex-grow">
-        <!-- Soft Background Elements -->
-        <div class="absolute top-1/4 -right-20 w-96 h-96 bg-terracotta-200/20 dark:bg-terracotta-900/20 rounded-full blur-3xl -z-10"></div>
-        <div class="absolute bottom-10 left-10 w-72 h-72 bg-stone-300/30 dark:bg-stone-800/40 rounded-full blur-3xl -z-10"></div>
+    <main class="flex-grow">
+        <!-- ========================================================================= -->
+        <!-- 2. HERO SECTION (#about)                                                  -->
+        <!-- ========================================================================= -->
+        <section id="about" class="relative py-16 sm:py-24 overflow-hidden">
+            <!-- Background Soft Ambient Glowing Blobs -->
+            <div class="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[30rem] h-[30rem] bg-rose-200/40 dark:bg-blush-950/30 rounded-full blur-3xl pointer-events-none -z-10"></div>
+            <div class="absolute top-1/4 right-10 w-72 h-72 bg-pink-200/30 dark:bg-rose-900/20 rounded-full blur-3xl pointer-events-none -z-10"></div>
 
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex flex-col-reverse lg:flex-row items-center gap-12 lg:gap-16">
-                
-                <!-- Hero Content & Bio -->
-                <div class="flex-1 text-center lg:text-left space-y-7">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="flex flex-col-reverse lg:flex-row items-center justify-between gap-12 lg:gap-16">
                     
-                    <!-- Availability / Mindset Badge -->
-                    <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-stone-200/50 dark:bg-stone-800 border border-stone-300/50 dark:border-stone-700 text-stone-700 dark:text-stone-300 text-xs font-semibold shadow-sm tracking-wide uppercase">
-                        <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-                        Open for Opportunities
-                    </div>
-
-                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-stone-900 dark:text-white tracking-tight leading-tight">
-                        Ana Victoria Fernandez <br>
-                        <span class="bg-gradient-to-r from-terracotta-800 to-amber-600 bg-clip-text text-transparent">Systems-Minded Problem Solver</span>
-                    </h1>
-
-                    <p class="text-base sm:text-lg text-stone-600 dark:text-stone-400 max-w-2xl mx-auto lg:mx-0 leading-relaxed font-medium">
-                        I bridge hardware-level logic, signal processing, and analytical system design into modern cloud architecture and intelligent workflows.
-                    </p>
-
-                    <!-- Featured Certification Badges Banner -->
-                    <div class="flex flex-wrap justify-center lg:justify-start gap-4 pt-2">
-                        <div class="flex items-center gap-3 px-4 py-2.5 rounded-2xl glass-card border border-stone-200 dark:border-stone-800 shadow-sm">
-                            <i class="fa-brands fa-aws text-amber-600 text-xl"></i>
-                            <span class="text-sm font-bold text-stone-800 dark:text-stone-200">AWS Cloud Practitioner Essentials</span>
+                    <!-- Bio Content -->
+                    <div class="flex-1 text-center lg:text-left space-y-6">
+                        <!-- Status Badge -->
+                        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-rose-100/80 dark:bg-blush-950/60 text-blush-800 dark:text-blush-300 text-xs font-semibold border border-rose-200/80 dark:border-blush-800/50 shadow-sm">
+                            <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+                            <!-- EDIT: [AVAILABILITY_STATUS] -->
+                            Open for Entry-Level Cloud & AI Roles
                         </div>
-                        <div class="flex items-center gap-3 px-4 py-2.5 rounded-2xl glass-card border border-stone-200 dark:border-stone-800 shadow-sm">
-                            <i class="fa-solid fa-brain text-blue-600 text-lg"></i>
-                            <span class="text-sm font-bold text-stone-800 dark:text-stone-200">IBM AI Foundations</span>
+
+                        <!-- Headline Title -->
+                        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-slate-900 dark:text-white tracking-tight leading-tight">
+                            <!-- EDIT: [YOUR_FULL_NAME] -->
+                            Hello, I'm <span class="bg-gradient-to-r from-blush-600 via-rose-500 to-pink-500 bg-clip-text text-transparent">YOUR NAME</span>
+                        </h1>
+                        <p class="text-lg sm:text-xl font-semibold text-slate-700 dark:text-slate-300">
+                            <!-- EDIT: [YOUR_TAGLINE] -->
+                            Driven Career Shifter | Aspiring Cloud Engineer & AI Specialist
+                        </p>
+
+                        <!-- Concise Elevator Pitch -->
+                        <p class="text-sm sm:text-base text-slate-600 dark:text-slate-300 max-w-2xl leading-relaxed">
+                            <!-- EDIT: [YOUR_ELEVATOR_PITCH] -->
+                            Transitioning into Information Technology with high resilience, unwavering passion, and a commitment to continuous growth. Equipped with foundational expertise in AWS Cloud architecture and IBM AI concepts, eager to build impactful, scalable solutions.
+                        </p>
+
+                        <!-- Prominent Certification Highlights -->
+                        <div class="pt-2 flex flex-wrap items-center justify-center lg:justify-start gap-3">
+                            <div class="flex items-center gap-2 px-3.5 py-2 rounded-2xl glass-card border border-rose-200/80 dark:border-rose-900/40 shadow-sm text-xs font-bold text-slate-800 dark:text-slate-200">
+                                <i class="fab fa-aws text-amber-500 text-base"></i>
+                                <span>AWS Cloud Practitioner Essentials</span>
+                            </div>
+                            <div class="flex items-center gap-2 px-3.5 py-2 rounded-2xl glass-card border border-rose-200/80 dark:border-rose-900/40 shadow-sm text-xs font-bold text-slate-800 dark:text-slate-200">
+                                <i class="fas fa-brain text-indigo-500 text-sm"></i>
+                                <span>IBM AI Foundations</span>
+                            </div>
                         </div>
-                    </div>
 
-                    <!-- CTAs & Social Links -->
-                    <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-4">
-                        <a href="#projects" class="px-7 py-3.5 rounded-xl bg-terracotta-800 hover:bg-terracotta-900 dark:bg-terracotta-700 dark:hover:bg-terracotta-600 text-white font-semibold shadow-lg shadow-terracotta-800/20 transition-all hover:-translate-y-0.5">
-                            Explore Projects
-                        </a>
-                        
-                        <!-- EDIT: Replace href below with your resume link -->
-                        <a href="[INSERT_RESUME_URL]" target="_blank" class="px-7 py-3.5 rounded-xl glass-card border border-stone-300 dark:border-stone-700 hover:border-terracotta-800 dark:hover:border-terracotta-500 font-semibold text-stone-800 dark:text-stone-200 transition-all hover:-translate-y-0.5 flex items-center gap-2">
-                            Download CV <i class="fa-solid fa-arrow-down text-sm"></i>
-                        </a>
-
-                        <!-- Social Links -->
-                        <div class="flex items-center gap-2 ml-0 sm:ml-4">
-                            <!-- EDIT: Add your github url -->
-                            <a href="[https://github.com/anafernandez02]" target="_blank" aria-label="GitHub" class="p-3 rounded-xl glass-card border border-stone-200 dark:border-stone-800 hover:text-terracotta-800 dark:hover:text-terracotta-500 transition-colors">
-                                <i class="fa-brands fa-github text-lg"></i>
+                        <!-- CTA Buttons -->
+                        <div class="flex flex-wrap items-center justify-center lg:justify-start gap-4 pt-3">
+                            <a href="#projects" class="px-6 py-3 rounded-2xl bg-blush-500 hover:bg-blush-600 text-white font-semibold shadow-lg shadow-blush-300/40 dark:shadow-none transition-all hover:scale-[1.02] flex items-center gap-2 text-xs uppercase tracking-wider">
+                                <i class="fas fa-sparkles"></i> Explore Projects
                             </a>
-                            <!-- EDIT: Add your linkedin url -->
-                            <a href="[https://www.linkedin.com/in/ana-fernandez-9a488242b]" target="_blank" aria-label="LinkedIn" class="p-3 rounded-xl glass-card border border-stone-200 dark:border-stone-800 hover:text-terracotta-800 dark:hover:text-terracotta-500 transition-colors">
-                                <i class="fa-brands fa-linkedin-in text-lg"></i>
+                            
+                            <!-- EDIT: [INSERT_RESUME_URL] -->
+                            <a href="https://example.com/resume.pdf" target="_blank" rel="noopener noreferrer" class="px-6 py-3 rounded-2xl bg-white/90 dark:bg-slate-800 border border-rose-200 dark:border-slate-700 text-slate-700 dark:text-slate-200 hover:bg-rose-50 dark:hover:bg-slate-750 font-semibold shadow-sm transition-all hover:scale-[1.02] flex items-center gap-2 text-xs uppercase tracking-wider">
+                                <i class="fas fa-file-arrow-down"></i> Download Resume
                             </a>
                         </div>
+
+                        <!-- Social Connections -->
+                        <div class="flex items-center justify-center lg:justify-start gap-3 pt-2 text-slate-500 dark:text-slate-400">
+                            <!-- EDIT: [YOUR_GITHUB_URL] -->
+                            <a href="https://github.com/jalinio" target="_blank" rel="noopener" aria-label="GitHub Profile" class="p-2.5 rounded-xl hover:text-blush-600 dark:hover:text-blush-400 hover:bg-rose-100/50 dark:hover:bg-slate-800 transition-colors">
+                                <i class="fab fa-github text-lg"></i>
+                            </a>
+                            <!-- EDIT: [YOUR_LINKEDIN_URL] -->
+                            <a href="https://linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn Profile" class="p-2.5 rounded-xl hover:text-blush-600 dark:hover:text-blush-400 hover:bg-rose-100/50 dark:hover:bg-slate-800 transition-colors">
+                                <i class="fab fa-linkedin text-lg"></i>
+                            </a>
+                            <!-- EDIT: [YOUR_EMAIL] -->
+                            <a href="mailto:sample@example.com" aria-label="Send Email" class="p-2.5 rounded-xl hover:text-blush-600 dark:hover:text-blush-400 hover:bg-rose-100/50 dark:hover:bg-slate-800 transition-colors">
+                                <i class="fas fa-envelope text-lg"></i>
+                            </a>
+                        </div>
                     </div>
 
-                </div>
-
-                <!-- Profile Picture Container -->
-                <div class="relative shrink-0 mb-8 lg:mb-0">
-                    <div class="absolute -inset-4 rounded-full bg-gradient-to-tr from-terracotta-300 to-amber-200 dark:from-terracotta-900 dark:to-stone-800 opacity-40 blur-2xl"></div>
-                    
-                    <!-- EDIT: Replace image src below with your custom photo URL -->
-                    <img 
-                        src="[INSERT_PROFILE_IMAGE_URL]" 
-                        alt="Profile Photo" 
-                        onerror="this.onerror=null; this.src='https://placehold.co/200x200/e7e2d7/5c5040?text=Profile+Photo';"
-                        class="relative w-52 h-52 lg:w-72 lg:h-72 rounded-full object-cover border-[6px] border-white dark:border-stone-900 shadow-2xl z-10"
-                    >
-                    
-                    <!-- Floating Accent -->
-                    <div class="absolute -bottom-2 -right-4 glass-card px-4 py-2 rounded-2xl border border-stone-200 dark:border-stone-800 shadow-lg z-20 flex items-center gap-2">
-                        <i class="fa-solid fa-microchip text-terracotta-800 dark:text-terracotta-500 text-lg"></i>
-                        <span class="text-xs font-bold text-stone-800 dark:text-stone-200 uppercase">Open for Opportunities</span>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- ========================================== -->
-    <!-- 3. SKILLS & CAPABILITIES SECTION (#skills) -->
-    <!-- ========================================== -->
-    <section id="skills" class="py-20 bg-stone-100/50 dark:bg-stone-950 border-y border-stone-200/60 dark:border-stone-900">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            
-            <!-- Section Header -->
-            <div class="text-center max-w-2xl mx-auto mb-14 space-y-4">
-                <span class="text-xs font-bold uppercase tracking-widest text-terracotta-800 dark:text-terracotta-500">Technical Arsenal</span>
-                <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-stone-900 dark:text-white">
-                    Skills & Core Competencies
-                </h2>
-                <p class="text-stone-600 dark:text-stone-400 text-base">
-                    Combining systems engineering logic with modern cloud and AI principles to architect robust solutions.
-                </p>
-            </div>
-
-            <!-- Skill Filter Tab Interface -->
-            <div class="flex flex-wrap justify-center gap-3 mb-12">
-                <button class="skill-filter active px-5 py-2.5 rounded-xl text-sm font-semibold transition-all bg-terracotta-800 text-white shadow-md" data-filter="all">
-                    All Domains
-                </button>
-                <button class="skill-filter px-5 py-2.5 rounded-xl text-sm font-semibold transition-all bg-white dark:bg-stone-900 text-stone-700 dark:text-stone-300 hover:bg-stone-200 dark:hover:bg-stone-800 border border-stone-200 dark:border-stone-800" data-filter="cloud">
-                    Cloud Architecture
-                </button>
-                <button class="skill-filter px-5 py-2.5 rounded-xl text-sm font-semibold transition-all bg-white dark:bg-stone-900 text-stone-700 dark:text-stone-300 hover:bg-stone-200 dark:hover:bg-stone-800 border border-stone-200 dark:border-stone-800" data-filter="ai">
-                    AI & Automation
-                </button>
-                <button class="skill-filter px-5 py-2.5 rounded-xl text-sm font-semibold transition-all bg-white dark:bg-stone-900 text-stone-700 dark:text-stone-300 hover:bg-stone-200 dark:hover:bg-stone-800 border border-stone-200 dark:border-stone-800" data-filter="engineering">
-                    Engineering & Systems
-                </button>
-                <button class="skill-filter px-5 py-2.5 rounded-xl text-sm font-semibold transition-all bg-white dark:bg-stone-900 text-stone-700 dark:text-stone-300 hover:bg-stone-200 dark:hover:bg-stone-800 border border-stone-200 dark:border-stone-800" data-filter="web">
-                    Web & Tools
-                </button>
-            </div>
-
-            <!-- Skill Cards Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6" id="skillsContainer">
-                
-                <!-- Domain Card 1: Cloud Architecture -->
-                <div class="skill-card glass-card p-7 rounded-3xl border border-stone-200/80 dark:border-stone-800 shadow-sm space-y-5 hover:-translate-y-1 transition-transform" data-category="cloud">
-                    <div class="w-14 h-14 rounded-2xl bg-amber-100 dark:bg-amber-900/30 text-amber-700 dark:text-amber-500 flex items-center justify-center text-2xl">
-                        <i class="fa-brands fa-aws"></i>
-                    </div>
-                    <div>
-                        <h3 class="font-bold text-stone-900 dark:text-white text-lg">Cloud & Infra</h3>
-                        <p class="text-sm text-stone-500 dark:text-stone-400 mt-1 font-medium">Core AWS Services</p>
-                    </div>
-                    <div class="flex flex-wrap gap-2 pt-2">
-                        <span class="px-3 py-1.5 rounded-lg bg-stone-100 dark:bg-stone-800 text-stone-800 dark:text-stone-200 text-xs font-semibold">AWS S3 & EC2</span>
-                        <span class="px-3 py-1.5 rounded-lg bg-stone-100 dark:bg-stone-800 text-stone-800 dark:text-stone-200 text-xs font-semibold">IAM Governance</span>
-                        <span class="px-3 py-1.5 rounded-lg bg-stone-100 dark:bg-stone-800 text-stone-800 dark:text-stone-200 text-xs font-semibold">CloudFront CDN</span>
-                        <span class="px-3 py-1.5 rounded-lg bg-stone-100 dark:bg-stone-800 text-stone-800 dark:text-stone-200 text-xs font-semibold">Route 53</span>
-                    </div>
-                </div>
-
-                <!-- Domain Card 2: AI & Data Systems -->
-                <div class="skill-card glass-card p-7 rounded-3xl border border-stone-200/80 dark:border-stone-800 shadow-sm space-y-5 hover:-translate-y-1 transition-transform" data-category="ai">
-                    <div class="w-14 h-14 rounded-2xl bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-500 flex items-center justify-center text-2xl">
-                        <i class="fa-solid fa-network-wired"></i>
-                    </div>
-                    <div>
-                        <h3 class="font-bold text-stone-900 dark:text-white text-lg">AI & Data</h3>
-                        <p class="text-sm text-stone-500 dark:text-stone-400 mt-1 font-medium">Intelligent Workflows</p>
-                    </div>
-                    <div class="flex flex-wrap gap-2 pt-2">
-                        <span class="px-3 py-1.5 rounded-lg bg-stone-100 dark:bg-stone-800 text-stone-800 dark:text-stone-200 text-xs font-semibold">IBM AI Foundations</span>
-                        <span class="px-3 py-1.5 rounded-lg bg-stone-100 dark:bg-stone-800 text-stone-800 dark:text-stone-200 text-xs font-semibold">Prompt Engineering</span>
-                        <span class="px-3 py-1.5 rounded-lg bg-stone-100 dark:bg-stone-800 text-stone-800 dark:text-stone-200 text-xs font-semibold">LLM APIs</span>
-                        <span class="px-3 py-1.5 rounded-lg bg-stone-100 dark:bg-stone-800 text-stone-800 dark:text-stone-200 text-xs font-semibold">Python</span>
-                    </div>
-                </div>
-
-                <!-- Domain Card 3: Engineering & Systems -->
-                <div class="skill-card glass-card p-7 rounded-3xl border border-stone-200/80 dark:border-stone-800 shadow-sm space-y-5 hover:-translate-y-1 transition-transform" data-category="engineering">
-                    <div class="w-14 h-14 rounded-2xl bg-terracotta-100 dark:bg-terracotta-900/30 text-terracotta-800 dark:text-terracotta-500 flex items-center justify-center text-2xl">
-                        <i class="fa-solid fa-microchip"></i>
-                    </div>
-                    <div>
-                        <h3 class="font-bold text-stone-900 dark:text-white text-lg">Systems Thinking</h3>
-                        <p class="text-sm text-stone-500 dark:text-stone-400 mt-1 font-medium">Engineering Logic</p>
-                    </div>
-                    <div class="flex flex-wrap gap-2 pt-2">
-                        <span class="px-3 py-1.5 rounded-lg bg-stone-100 dark:bg-stone-800 text-stone-800 dark:text-stone-200 text-xs font-semibold">Hardware Logic</span>
-                        <span class="px-3 py-1.5 rounded-lg bg-stone-100 dark:bg-stone-800 text-stone-800 dark:text-stone-200 text-xs font-semibold">Signal/Data Flow</span>
-                        <span class="px-3 py-1.5 rounded-lg bg-stone-100 dark:bg-stone-800 text-stone-800 dark:text-stone-200 text-xs font-semibold">Root-Cause Analysis</span>
-                        <span class="px-3 py-1.5 rounded-lg bg-stone-100 dark:bg-stone-800 text-stone-800 dark:text-stone-200 text-xs font-semibold">Circuit Logic</span>
-                    </div>
-                </div>
-
-                <!-- Domain Card 4: Web & Tools -->
-                <div class="skill-card glass-card p-7 rounded-3xl border border-stone-200/80 dark:border-stone-800 shadow-sm space-y-5 hover:-translate-y-1 transition-transform" data-category="web">
-                    <div class="w-14 h-14 rounded-2xl bg-emerald-100 dark:bg-emerald-900/30 text-emerald-700 dark:text-emerald-500 flex items-center justify-center text-2xl">
-                        <i class="fa-solid fa-code"></i>
-                    </div>
-                    <div>
-                        <h3 class="font-bold text-stone-900 dark:text-white text-lg">Web & Tools</h3>
-                        <p class="text-sm text-stone-500 dark:text-stone-400 mt-1 font-medium">Frontend & Versioning</p>
-                    </div>
-                    <div class="flex flex-wrap gap-2 pt-2">
-                        <span class="px-3 py-1.5 rounded-lg bg-stone-100 dark:bg-stone-800 text-stone-800 dark:text-stone-200 text-xs font-semibold">HTML5/CSS3</span>
-                        <span class="px-3 py-1.5 rounded-lg bg-stone-100 dark:bg-stone-800 text-stone-800 dark:text-stone-200 text-xs font-semibold">Tailwind CSS</span>
-                        <span class="px-3 py-1.5 rounded-lg bg-stone-100 dark:bg-stone-800 text-stone-800 dark:text-stone-200 text-xs font-semibold">JavaScript</span>
-                        <span class="px-3 py-1.5 rounded-lg bg-stone-100 dark:bg-stone-800 text-stone-800 dark:text-stone-200 text-xs font-semibold">Git & GitHub</span>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- ========================================== -->
-    <!-- 4. PROJECTS SHOWCASE SECTION (#projects)   -->
-    <!-- ========================================== -->
-    <section id="projects" class="py-20">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            
-            <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-14">
-                <div class="space-y-4 max-w-2xl">
-                    <span class="text-xs font-bold uppercase tracking-widest text-terracotta-800 dark:text-terracotta-500">Portfolio</span>
-                    <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-stone-900 dark:text-white">
-                        Featured Projects
-                    </h2>
-                    <p class="text-stone-600 dark:text-stone-400 text-base">
-                        Practical implementations demonstrating cloud architecture deployment, AI integrations, and responsive web development.
-                    </p>
-                </div>
-            </div>
-
-            <!-- Projects Dynamic Grid (Rendered via JavaScript) -->
-            <div id="projectsGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 lg:gap-10">
-                <!-- Project cards injected dynamically via JavaScript below -->
-            </div>
-
-        </div>
-    </section>
-
-    <!-- ========================================== -->
-    <!-- 5. JOURNEY & CREDENTIALS (#certifications) -->
-    <!-- ========================================== -->
-    <section id="certifications" class="py-20 bg-stone-100/50 dark:bg-stone-950 border-y border-stone-200/60 dark:border-stone-900">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            
-            <div class="text-center max-w-2xl mx-auto mb-16 space-y-4">
-                <span class="text-xs font-bold uppercase tracking-widest text-terracotta-800 dark:text-terracotta-500">Milestones</span>
-                <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-stone-900 dark:text-white">
-                    Journey & Credentials
-                </h2>
-                <p class="text-stone-600 dark:text-stone-400 text-base">
-                    Tracing the evolution from academic engineering roots to specialized credentials in Cloud and AI.
-                </p>
-            </div>
-
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-12 items-start">
-                
-                <!-- Timeline Column -->
-                <div class="space-y-8">
-                    <h3 class="text-2xl font-bold text-stone-900 dark:text-white flex items-center gap-3">
-                        <i class="fa-solid fa-route text-terracotta-800 dark:text-terracotta-500"></i> Engineering Evolution
-                    </h3>
-
-                    <div class="relative border-l-2 border-stone-300 dark:border-stone-700 ml-4 space-y-10 py-2">
+                    <!-- Profile Picture Placeholder with Soft Gradient Ring -->
+                    <div class="relative flex-shrink-0">
+                        <div class="relative w-44 h-44 sm:w-52 sm:h-52 lg:w-60 lg:h-60 rounded-full p-2 bg-gradient-to-tr from-blush-400 via-rose-300 to-pink-200 shadow-xl shadow-rose-200/50 dark:shadow-none">
+                            <!-- EDIT: [INSERT_PROFILE_IMAGE_URL] -->
+                            <img src="[INSERT_PROFILE_IMAGE_URL]" onerror="this.onerror=null; this.src='https://placehold.co/200x200/ffe4e6/be123c?text=Your+Photo';" alt="Profile Photo" class="w-full h-full object-cover rounded-full bg-slate-800 border-4 border-white dark:border-slate-900 shadow-inner">
+                        </div>
                         
-                        <!-- Timeline Item 1 -->
-                        <div class="relative pl-8">
-                            <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-terracotta-500 border-4 border-stone-100 dark:border-stone-950 shadow-sm"></div>
-                            <span class="text-xs font-bold text-terracotta-800 dark:text-terracotta-500 uppercase tracking-wider block mb-1">Present</span>
-                            <h4 class="text-xl font-bold text-stone-900 dark:text-white mb-2">Cloud & AI Specialization</h4>
-                            <p class="text-sm text-stone-600 dark:text-stone-400 leading-relaxed bg-white dark:bg-stone-900 p-5 rounded-2xl border border-stone-200 dark:border-stone-800 shadow-sm">
-                                Actively building practical cloud architectures on AWS and integrating IBM AI foundations into web-based applications. Focusing on scalable, serverless, and intelligent solutions.
-                            </p>
+                        <!-- Floating Decorative Badge -->
+                        <div class="absolute -bottom-2 -right-1 px-4 py-2 rounded-2xl glass-card shadow-md text-xs font-bold text-blush-700 dark:text-blush-300 flex items-center gap-2 border border-rose-200/70 dark:border-rose-900/50">
+                            <i class="fas fa-seedling text-emerald-500"></i> Career Shifter
                         </div>
-
-                        <!-- Timeline Item 2 -->
-                        <div class="relative pl-8">
-                            <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-stone-400 dark:bg-stone-600 border-4 border-stone-100 dark:border-stone-950 shadow-sm"></div>
-                            <span class="text-xs font-bold text-stone-500 dark:text-stone-400 uppercase tracking-wider block mb-1">Foundation</span>
-                            <h4 class="text-xl font-bold text-stone-900 dark:text-white mb-2">Engineering & Systems (ECE)</h4>
-                            <p class="text-sm text-stone-600 dark:text-stone-400 leading-relaxed bg-white dark:bg-stone-900 p-5 rounded-2xl border border-stone-200 dark:border-stone-800 shadow-sm">
-                                Developed a rigorous analytical mindset studying hardware logic, circuit design, and signal flow. This hardware-first understanding provides a unique, deep-level perspective on modern software and cloud infrastructure.
-                            </p>
-                        </div>
-
                     </div>
+
                 </div>
-
-                <!-- Certifications Column -->
-                <div class="space-y-8">
-                    <h3 class="text-2xl font-bold text-stone-900 dark:text-white flex items-center gap-3">
-                        <i class="fa-solid fa-award text-terracotta-800 dark:text-terracotta-500"></i> Verified Credentials
-                    </h3>
-
-                    <div class="space-y-5">
-                        
-                        <!-- Certification 1: AWS -->
-                        <div class="glass-card p-6 sm:p-8 rounded-3xl border border-stone-200 dark:border-stone-800 shadow-sm flex flex-col sm:flex-row items-start gap-5 hover:-translate-y-1 transition-transform">
-                            <div class="w-16 h-16 rounded-2xl bg-amber-100 dark:bg-amber-900/30 text-amber-600 flex items-center justify-center text-3xl shrink-0">
-                                <i class="fa-brands fa-aws"></i>
-                            </div>
-                            <div class="flex-1 space-y-3">
-                                <div>
-                                    <div class="flex items-center gap-2 mb-1">
-                                        <h4 class="font-bold text-stone-900 dark:text-white text-lg leading-tight">AWS Cloud Practitioner Essentials</h4>
-                                    </div>
-                                    <p class="text-xs font-semibold text-amber-700 dark:text-amber-500 uppercase tracking-wide">Amazon Web Services</p>
-                                </div>
-                                <p class="text-sm text-stone-600 dark:text-stone-400 leading-relaxed">
-                                    Validated understanding of AWS Cloud concepts, core services, security, architecture, pricing, and support.
-                                </p>
-                                <!-- EDIT: Replace href below with actual credential link -->
-                                <a href="[INSERT_CREDENTIAL_URL]" target="_blank" class="inline-flex items-center gap-2 text-sm font-bold text-terracotta-800 dark:text-terracotta-500 hover:text-terracotta-600 transition-colors">
-                                    Verify Credential <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
-                                </a>
-                            </div>
-                        </div>
-
-                        <!-- Certification 2: IBM AI -->
-                        <div class="glass-card p-6 sm:p-8 rounded-3xl border border-stone-200 dark:border-stone-800 shadow-sm flex flex-col sm:flex-row items-start gap-5 hover:-translate-y-1 transition-transform">
-                            <div class="w-16 h-16 rounded-2xl bg-blue-100 dark:bg-blue-900/30 text-blue-600 flex items-center justify-center text-3xl shrink-0">
-                                <i class="fa-solid fa-brain"></i>
-                            </div>
-                            <div class="flex-1 space-y-3">
-                                <div>
-                                    <h4 class="font-bold text-stone-900 dark:text-white text-lg leading-tight mb-1">IBM AI Foundations</h4>
-                                    <p class="text-xs font-semibold text-blue-700 dark:text-blue-500 uppercase tracking-wide">IBM</p>
-                                </div>
-                                <p class="text-sm text-stone-600 dark:text-stone-400 leading-relaxed">
-                                    Mastery of AI methodologies, including machine learning, generative AI, prompt engineering, and AI ethics.
-                                </p>
-                                <!-- EDIT: Replace href below with actual credential link -->
-                                <a href="[INSERT_CREDENTIAL_URL]" target="_blank" class="inline-flex items-center gap-2 text-sm font-bold text-terracotta-800 dark:text-terracotta-500 hover:text-terracotta-600 transition-colors">
-                                    Verify Credential <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
-                                </a>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
             </div>
+        </section>
 
-        </div>
-    </section>
-
-    <!-- ========================================== -->
-    <!-- 6. CONTACT SECTION & FOOTER (#contact)     -->
-    <!-- ========================================== -->
-    <section id="contact" class="py-20 relative">
-        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-            
-            <div class="text-center mb-12 space-y-4">
-                <span class="text-xs font-bold uppercase tracking-widest text-terracotta-800 dark:text-terracotta-500">Connect</span>
-                <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight text-stone-900 dark:text-white">
-                    Let's Build Something
-                </h2>
-                <p class="text-stone-600 dark:text-stone-400 text-base max-w-2xl mx-auto">
-                    Interested in cloud architecture, AI integrations, or discussing engineering problems? I am actively looking for new opportunities and collaborations.
-                </p>
-            </div>
-
-            <div class="glass-card p-8 sm:p-10 rounded-[2rem] border border-stone-200 dark:border-stone-800 shadow-xl">
+        <!-- ========================================================================= -->
+        <!-- 3. SKILLS & CAPABILITIES SECTION (#skills)                                -->
+        <!-- Inspired by kris-amor.github.io with domain cards & interactive tabs     -->
+        <!-- ========================================================================= -->
+        <section id="skills" class="py-20 bg-rose-50/40 dark:bg-slate-900/40 border-y border-rose-100/70 dark:border-slate-800/60">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 
-                <!-- EDIT: Replace action URL with your Formspree endpoint -->
-                <form action="[INSERT_FORMSPREE_ENDPOINT_URL]" method="POST" class="space-y-6">
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <div class="space-y-2">
-                            <label for="name" class="text-xs font-bold uppercase tracking-wide text-stone-700 dark:text-stone-300">Name</label>
-                            <input type="text" id="name" name="name" required placeholder="Jane Doe" class="w-full px-5 py-3.5 rounded-xl bg-white dark:bg-[#1c1917] border border-stone-200 dark:border-stone-700 focus:outline-none focus:ring-2 focus:ring-terracotta-500 text-sm text-stone-900 dark:text-white transition-all shadow-sm">
-                        </div>
-                        <div class="space-y-2">
-                            <label for="email" class="text-xs font-bold uppercase tracking-wide text-stone-700 dark:text-stone-300">Email Address</label>
-                            <input type="email" id="email" name="email" required placeholder="jane@example.com" class="w-full px-5 py-3.5 rounded-xl bg-white dark:bg-[#1c1917] border border-stone-200 dark:border-stone-700 focus:outline-none focus:ring-2 focus:ring-terracotta-500 text-sm text-stone-900 dark:text-white transition-all shadow-sm">
-                        </div>
-                    </div>
+                <!-- Section Header -->
+                <div class="text-center max-w-3xl mx-auto space-y-3 mb-12">
+                    <h2 class="text-xs font-bold uppercase tracking-widest text-blush-600 dark:text-blush-400">Technical Growth</h2>
+                    <p class="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white">Skills & Capabilities</p>
+                    <p class="text-slate-600 dark:text-slate-400 text-xs sm:text-sm">Categorized view of my evolving IT technical competencies and transferable strengths.</p>
+                </div>
 
-                    <div class="space-y-2">
-                        <label for="message" class="text-xs font-bold uppercase tracking-wide text-stone-700 dark:text-stone-300">Message</label>
-                        <textarea id="message" name="message" rows="5" required placeholder="How can we collaborate?" class="w-full px-5 py-3.5 rounded-xl bg-white dark:bg-[#1c1917] border border-stone-200 dark:border-stone-700 focus:outline-none focus:ring-2 focus:ring-terracotta-500 text-sm text-stone-900 dark:text-white transition-all shadow-sm resize-none"></textarea>
-                    </div>
-
-                    <button type="submit" class="w-full px-8 py-4 rounded-xl bg-terracotta-800 hover:bg-terracotta-900 dark:bg-terracotta-700 dark:hover:bg-terracotta-600 text-white font-bold tracking-wide transition-all active:scale-[0.98] shadow-md shadow-terracotta-800/20 flex items-center justify-center gap-3">
-                        Send Message <i class="fa-solid fa-paper-plane text-sm"></i>
+                <!-- Skill Filter Tabs -->
+                <div class="flex flex-wrap justify-center gap-2 mb-10">
+                    <button onclick="filterSkills('all')" class="skill-tab-btn active px-4 py-2 rounded-2xl text-xs font-semibold transition-all bg-blush-500 text-white shadow-sm" data-tab="all">
+                        All Skills
                     </button>
-                </form>
+                    <button onclick="filterSkills('cloud')" class="skill-tab-btn px-4 py-2 rounded-2xl text-xs font-semibold transition-all bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-rose-100/50 dark:hover:bg-slate-700" data-tab="cloud">
+                        Cloud & Infrastructure
+                    </button>
+                    <button onclick="filterSkills('ai')" class="skill-tab-btn px-4 py-2 rounded-2xl text-xs font-semibold transition-all bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-rose-100/50 dark:hover:bg-slate-700" data-tab="ai">
+                        AI & Data
+                    </button>
+                    <button onclick="filterSkills('web')" class="skill-tab-btn px-4 py-2 rounded-2xl text-xs font-semibold transition-all bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-rose-100/50 dark:hover:bg-slate-700" data-tab="web">
+                        Web Development
+                    </button>
+                    <button onclick="filterSkills('soft')" class="skill-tab-btn px-4 py-2 rounded-2xl text-xs font-semibold transition-all bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-rose-100/50 dark:hover:bg-slate-700" data-tab="soft">
+                        Transferable Strengths
+                    </button>
+                </div>
+
+                <!-- Skill Cards Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="skills-grid">
+                    
+                    <!-- Skill Card 1: Cloud -->
+                    <div class="skill-card glass-card p-6 rounded-3xl space-y-4 hover:shadow-lg transition-all border border-rose-200/70 dark:border-slate-800" data-category="cloud">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-2xl bg-amber-500/10 text-amber-600 dark:text-amber-400 flex items-center justify-center text-base">
+                                    <i class="fab fa-aws"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-sm text-slate-900 dark:text-white">AWS Cloud Fundamentals</h3>
+                                    <span class="text-[11px] text-slate-500 dark:text-slate-400">Cloud & Infrastructure</span>
+                                </div>
+                            </div>
+                            <span class="px-2.5 py-0.5 rounded-full bg-amber-100 dark:bg-amber-950 text-amber-800 dark:text-amber-300 text-[10px] font-bold">Practitioner</span>
+                        </div>
+                        <div class="w-full bg-rose-100/60 dark:bg-slate-800 h-1.5 rounded-full overflow-hidden">
+                            <div class="bg-amber-500 h-full rounded-full w-[75%]"></div>
+                        </div>
+                        <div class="flex flex-wrap gap-1.5 pt-1">
+                            <span class="px-2.5 py-0.5 rounded-lg bg-rose-50 dark:bg-slate-800 text-slate-600 dark:text-slate-300 text-xs font-medium">S3 Storage</span>
+                            <span class="px-2.5 py-0.5 rounded-lg bg-rose-50 dark:bg-slate-800 text-slate-600 dark:text-slate-300 text-xs font-medium">EC2 Instances</span>
+                            <span class="px-2.5 py-0.5 rounded-lg bg-rose-50 dark:bg-slate-800 text-slate-600 dark:text-slate-300 text-xs font-medium">IAM Policies</span>
+                            <span class="px-2.5 py-0.5 rounded-lg bg-rose-50 dark:bg-slate-800 text-slate-600 dark:text-slate-300 text-xs font-medium">CloudFront</span>
+                        </div>
+                    </div>
+
+                    <!-- Skill Card 2: AI -->
+                    <div class="skill-card glass-card p-6 rounded-3xl space-y-4 hover:shadow-lg transition-all border border-rose-200/70 dark:border-slate-800" data-category="ai">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-2xl bg-indigo-500/10 text-indigo-600 dark:text-indigo-400 flex items-center justify-center text-base">
+                                    <i class="fas fa-brain"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-sm text-slate-900 dark:text-white">AI & Machine Learning</h3>
+                                    <span class="text-[11px] text-slate-500 dark:text-slate-400">AI & Data</span>
+                                </div>
+                            </div>
+                            <span class="px-2.5 py-0.5 rounded-full bg-indigo-100 dark:bg-indigo-950 text-indigo-800 dark:text-indigo-300 text-[10px] font-bold">Foundational</span>
+                        </div>
+                        <div class="w-full bg-rose-100/60 dark:bg-slate-800 h-1.5 rounded-full overflow-hidden">
+                            <div class="bg-indigo-500 h-full rounded-full w-[70%]"></div>
+                        </div>
+                        <div class="flex flex-wrap gap-1.5 pt-1">
+                            <span class="px-2.5 py-0.5 rounded-lg bg-rose-50 dark:bg-slate-800 text-slate-600 dark:text-slate-300 text-xs font-medium">IBM AI Foundations</span>
+                            <span class="px-2.5 py-0.5 rounded-lg bg-rose-50 dark:bg-slate-800 text-slate-600 dark:text-slate-300 text-xs font-medium">Prompt Design</span>
+                            <span class="px-2.5 py-0.5 rounded-lg bg-rose-50 dark:bg-slate-800 text-slate-600 dark:text-slate-300 text-xs font-medium">Generative AI</span>
+                            <span class="px-2.5 py-0.5 rounded-lg bg-rose-50 dark:bg-slate-800 text-slate-600 dark:text-slate-300 text-xs font-medium">Python Basics</span>
+                        </div>
+                    </div>
+
+                    <!-- Skill Card 3: Web -->
+                    <div class="skill-card glass-card p-6 rounded-3xl space-y-4 hover:shadow-lg transition-all border border-rose-200/70 dark:border-slate-800" data-category="web">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-2xl bg-blush-500/10 text-blush-600 dark:text-blush-400 flex items-center justify-center text-base">
+                                    <i class="fab fa-html5"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-sm text-slate-900 dark:text-white">Frontend Web Basics</h3>
+                                    <span class="text-[11px] text-slate-500 dark:text-slate-400">Web Development</span>
+                                </div>
+                            </div>
+                            <span class="px-2.5 py-0.5 rounded-full bg-rose-100 dark:bg-blush-950 text-blush-800 dark:text-blush-300 text-[10px] font-bold">Intermediate</span>
+                        </div>
+                        <div class="w-full bg-rose-100/60 dark:bg-slate-800 h-1.5 rounded-full overflow-hidden">
+                            <div class="bg-blush-500 h-full rounded-full w-[80%]"></div>
+                        </div>
+                        <div class="flex flex-wrap gap-1.5 pt-1">
+                            <span class="px-2.5 py-0.5 rounded-lg bg-rose-50 dark:bg-slate-800 text-slate-600 dark:text-slate-300 text-xs font-medium">HTML5</span>
+                            <span class="px-2.5 py-0.5 rounded-lg bg-rose-50 dark:bg-slate-800 text-slate-600 dark:text-slate-300 text-xs font-medium">CSS3</span>
+                            <span class="px-2.5 py-0.5 rounded-lg bg-rose-50 dark:bg-slate-800 text-slate-600 dark:text-slate-300 text-xs font-medium">Tailwind CSS</span>
+                            <span class="px-2.5 py-0.5 rounded-lg bg-rose-50 dark:bg-slate-800 text-slate-600 dark:text-slate-300 text-xs font-medium">JavaScript</span>
+                        </div>
+                    </div>
+
+                    <!-- Skill Card 4: Web Tools -->
+                    <div class="skill-card glass-card p-6 rounded-3xl space-y-4 hover:shadow-lg transition-all border border-rose-200/70 dark:border-slate-800" data-category="web">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-2xl bg-slate-500/10 text-slate-700 dark:text-slate-300 flex items-center justify-center text-base">
+                                    <i class="fab fa-git-alt"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-sm text-slate-900 dark:text-white">Version Control & Tools</h3>
+                                    <span class="text-[11px] text-slate-500 dark:text-slate-400">Web Development</span>
+                                </div>
+                            </div>
+                            <span class="px-2.5 py-0.5 rounded-full bg-slate-200 dark:bg-slate-800 text-slate-800 dark:text-slate-300 text-[10px] font-bold">Proficient</span>
+                        </div>
+                        <div class="w-full bg-rose-100/60 dark:bg-slate-800 h-1.5 rounded-full overflow-hidden">
+                            <div class="bg-slate-600 h-full rounded-full w-[78%]"></div>
+                        </div>
+                        <div class="flex flex-wrap gap-1.5 pt-1">
+                            <span class="px-2.5 py-0.5 rounded-lg bg-rose-50 dark:bg-slate-800 text-slate-600 dark:text-slate-300 text-xs font-medium">Git & GitHub</span>
+                            <span class="px-2.5 py-0.5 rounded-lg bg-rose-50 dark:bg-slate-800 text-slate-600 dark:text-slate-300 text-xs font-medium">VS Code</span>
+                            <span class="px-2.5 py-0.5 rounded-lg bg-rose-50 dark:bg-slate-800 text-slate-600 dark:text-slate-300 text-xs font-medium">GitHub Pages</span>
+                        </div>
+                    </div>
+
+                    <!-- Skill Card 5: Soft Skills -->
+                    <div class="skill-card glass-card p-6 rounded-3xl space-y-4 hover:shadow-lg transition-all border border-rose-200/70 dark:border-slate-800" data-category="soft">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-2xl bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 flex items-center justify-center text-base">
+                                    <i class="fas fa-arrows-spin"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-sm text-slate-900 dark:text-white">Agile & Adaptability</h3>
+                                    <span class="text-[11px] text-slate-500 dark:text-slate-400">Transferable Strengths</span>
+                                </div>
+                            </div>
+                            <span class="px-2.5 py-0.5 rounded-full bg-emerald-100 dark:bg-emerald-950 text-emerald-800 dark:text-emerald-300 text-[10px] font-bold">Core Strength</span>
+                        </div>
+                        <div class="w-full bg-rose-100/60 dark:bg-slate-800 h-1.5 rounded-full overflow-hidden">
+                            <div class="bg-emerald-500 h-full rounded-full w-[92%]"></div>
+                        </div>
+                        <div class="flex flex-wrap gap-1.5 pt-1">
+                            <span class="px-2.5 py-0.5 rounded-lg bg-rose-50 dark:bg-slate-800 text-slate-600 dark:text-slate-300 text-xs font-medium">Problem Solving</span>
+                            <span class="px-2.5 py-0.5 rounded-lg bg-rose-50 dark:bg-slate-800 text-slate-600 dark:text-slate-300 text-xs font-medium">Cross-functional Comm</span>
+                            <span class="px-2.5 py-0.5 rounded-lg bg-rose-50 dark:bg-slate-800 text-slate-600 dark:text-slate-300 text-xs font-medium">Agile Collaboration</span>
+                        </div>
+                    </div>
+
+                    <!-- Skill Card 6: Learning -->
+                    <div class="skill-card glass-card p-6 rounded-3xl space-y-4 hover:shadow-lg transition-all border border-rose-200/70 dark:border-slate-800" data-category="soft">
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-2xl bg-pink-500/10 text-pink-600 dark:text-pink-400 flex items-center justify-center text-base">
+                                    <i class="fas fa-graduation-cap"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-sm text-slate-900 dark:text-white">Continuous Growth</h3>
+                                    <span class="text-[11px] text-slate-500 dark:text-slate-400">Transferable Strengths</span>
+                                </div>
+                            </div>
+                            <span class="px-2.5 py-0.5 rounded-full bg-pink-100 dark:bg-pink-950 text-pink-800 dark:text-pink-300 text-[10px] font-bold">High Commitment</span>
+                        </div>
+                        <div class="w-full bg-rose-100/60 dark:bg-slate-800 h-1.5 rounded-full overflow-hidden">
+                            <div class="bg-pink-500 h-full rounded-full w-[95%]"></div>
+                        </div>
+                        <div class="flex flex-wrap gap-1.5 pt-1">
+                            <span class="px-2.5 py-0.5 rounded-lg bg-rose-50 dark:bg-slate-800 text-slate-600 dark:text-slate-300 text-xs font-medium">Self-Directed Learning</span>
+                            <span class="px-2.5 py-0.5 rounded-lg bg-rose-50 dark:bg-slate-800 text-slate-600 dark:text-slate-300 text-xs font-medium">Resilience</span>
+                            <span class="px-2.5 py-0.5 rounded-lg bg-rose-50 dark:bg-slate-800 text-slate-600 dark:text-slate-300 text-xs font-medium">Tech Curiosity</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================================================= -->
+        <!-- 4. PROJECTS SHOWCASE SECTION (#projects)                                  -->
+        <!-- Dynamically rendered from JS projectsData array                           -->
+        <!-- ========================================================================= -->
+        <section id="projects" class="py-20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <!-- Section Header -->
+                <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
+                    <div class="space-y-3">
+                        <h2 class="text-xs font-bold uppercase tracking-widest text-blush-600 dark:text-blush-400">Hands-on Application</h2>
+                        <p class="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white">Projects Showcase</p>
+                        <p class="text-slate-600 dark:text-slate-400 text-xs sm:text-sm max-w-xl">Practical demonstrations of AWS cloud configurations, AI experiments, and web builds.</p>
+                    </div>
+
+                    <!-- Category Filter Buttons -->
+                    <div class="flex flex-wrap gap-2" id="project-filters">
+                        <button onclick="filterProjects('all')" class="project-filter-btn active px-3.5 py-1.5 rounded-xl text-xs font-semibold bg-blush-500 text-white shadow-sm transition-all" data-filter="all">All Projects</button>
+                        <button onclick="filterProjects('Cloud')" class="project-filter-btn px-3.5 py-1.5 rounded-xl text-xs font-semibold bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-rose-100/50 dark:hover:bg-slate-700 transition-all" data-filter="Cloud">Cloud</button>
+                        <button onclick="filterProjects('AI')" class="project-filter-btn px-3.5 py-1.5 rounded-xl text-xs font-semibold bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-rose-100/50 dark:hover:bg-slate-700 transition-all" data-filter="AI">AI & Automation</button>
+                        <button onclick="filterProjects('Web')" class="project-filter-btn px-3.5 py-1.5 rounded-xl text-xs font-semibold bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-rose-100/50 dark:hover:bg-slate-700 transition-all" data-filter="Web">Web Builds</button>
+                    </div>
+                </div>
+
+                <!-- Projects Grid Container -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="projects-container">
+                    <!-- Dynamic Javascript Rendering Below -->
+                </div>
 
             </div>
+        </section>
 
-        </div>
-    </section>
+        <!-- ========================================================================= -->
+        <!-- 5. CAREER JOURNEY & CERTIFICATIONS (#certifications)                    -->
+        <!-- ========================================================================= -->
+        <section id="certifications" class="py-20 bg-rose-50/40 dark:bg-slate-900/40 border-y border-rose-100/70 dark:border-slate-800/60">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="text-center max-w-3xl mx-auto space-y-3 mb-16">
+                    <h2 class="text-xs font-bold uppercase tracking-widest text-blush-600 dark:text-blush-400">Milestones & Achievements</h2>
+                    <p class="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white">Career Transition & Certifications</p>
+                    <p class="text-slate-600 dark:text-slate-400 text-xs sm:text-sm">My journey shifting into tech, complemented by recognized industry credentials.</p>
+                </div>
 
-    <!-- Minimal Footer -->
-    <footer class="py-8 border-t border-stone-200 dark:border-stone-800 bg-stone-100/50 dark:bg-stone-950 mt-auto">
-        <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-4 text-xs font-medium text-stone-500 dark:text-stone-400">
-            <p>Built with Engineering Passion &bull; Hosted on GitHub Pages</p>
-            <div class="flex items-center gap-6">
-                <!-- EDIT: Add your github url -->
-                <a href="[INSERT_GITHUB_URL]" target="_blank" class="hover:text-terracotta-800 dark:hover:text-terracotta-500 transition-colors flex items-center gap-2">
-                    <i class="fa-brands fa-github text-sm"></i> GitHub
-                </a>
-                <!-- EDIT: Add your linkedin url -->
-                <a href="[INSERT_LINKEDIN_URL]" target="_blank" class="hover:text-terracotta-800 dark:hover:text-terracotta-500 transition-colors flex items-center gap-2">
-                    <i class="fa-brands fa-linkedin-in text-sm"></i> LinkedIn
-                </a>
-                <a href="#about" class="hover:text-terracotta-800 dark:hover:text-terracotta-500 transition-colors">
-                    Back to top <i class="fa-solid fa-arrow-up text-[10px] ml-1"></i>
-                </a>
+                <!-- Verified Certification Showcase Cards -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-16">
+                    
+                    <!-- Certification Card 1: AWS -->
+                    <div class="glass-card p-6 sm:p-8 rounded-3xl border border-rose-200/80 dark:border-slate-800 flex flex-col justify-between space-y-6 hover:shadow-lg transition-all relative overflow-hidden group">
+                        <div class="flex items-start justify-between gap-4">
+                            <div class="flex items-center gap-4">
+                                <div class="w-14 h-14 rounded-2xl bg-amber-500/10 text-amber-600 dark:text-amber-400 flex items-center justify-center text-2xl flex-shrink-0">
+                                    <i class="fab fa-aws"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-base text-slate-900 dark:text-white group-hover:text-blush-600 transition-colors">AWS Cloud Practitioner Essentials</h3>
+                                    <p class="text-xs text-blush-600 dark:text-blush-400 font-medium">Amazon Web Services</p>
+                                </div>
+                            </div>
+                            <span class="px-3 py-1 rounded-full bg-emerald-100 dark:bg-emerald-950 text-emerald-800 dark:text-emerald-300 text-[10px] font-bold uppercase tracking-wider">
+                                Verified
+                            </span>
+                        </div>
+                        <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+                            Comprehensive understanding of AWS Cloud concepts, core services, security, architecture, pricing, and support models.
+                        </p>
+                        <div class="pt-2 border-t border-rose-100 dark:border-slate-800 flex items-center justify-between">
+                            <span class="text-[11px] text-slate-500 dark:text-slate-400"><i class="fas fa-calendar-check mr-1 text-blush-500"></i> Issued 2024</span>
+                            
+                            <!-- EDIT: [INSERT_CREDENTIAL_URL] -->
+                            <a href="https://aws.amazon.com/verification" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold text-blush-600 dark:text-blush-400 hover:underline flex items-center gap-1">
+                                Verify Credential <i class="fas fa-arrow-up-right-from-square text-[10px]"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Certification Card 2: IBM AI -->
+                    <div class="glass-card p-6 sm:p-8 rounded-3xl border border-rose-200/80 dark:border-slate-800 flex flex-col justify-between space-y-6 hover:shadow-lg transition-all relative overflow-hidden group">
+                        <div class="flex items-start justify-between gap-4">
+                            <div class="flex items-center gap-4">
+                                <div class="w-14 h-14 rounded-2xl bg-indigo-500/10 text-indigo-600 dark:text-indigo-400 flex items-center justify-center text-2xl flex-shrink-0">
+                                    <i class="fas fa-brain"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-bold text-base text-slate-900 dark:text-white group-hover:text-blush-600 transition-colors">IBM AI Foundations</h3>
+                                    <p class="text-xs text-blush-600 dark:text-blush-400 font-medium">IBM SkillsBuild</p>
+                                </div>
+                            </div>
+                            <span class="px-3 py-1 rounded-full bg-emerald-100 dark:bg-emerald-950 text-emerald-800 dark:text-emerald-300 text-[10px] font-bold uppercase tracking-wider">
+                                Verified
+                            </span>
+                        </div>
+                        <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed">
+                            Foundational mastery of Artificial Intelligence workflows, Machine Learning fundamentals, Generative AI models, and AI Ethics.
+                        </p>
+                        <div class="pt-2 border-t border-rose-100 dark:border-slate-800 flex items-center justify-between">
+                            <span class="text-[11px] text-slate-500 dark:text-slate-400"><i class="fas fa-calendar-check mr-1 text-blush-500"></i> Issued 2024</span>
+                            
+                            <!-- EDIT: [INSERT_CREDENTIAL_URL] -->
+                            <a href="https://www.credly.com" target="_blank" rel="noopener noreferrer" class="text-xs font-semibold text-blush-600 dark:text-blush-400 hover:underline flex items-center gap-1">
+                                Verify Credential <i class="fas fa-arrow-up-right-from-square text-[10px]"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Vertical Career Shifter Timeline -->
+                <div class="max-w-3xl mx-auto relative border-l-2 border-rose-200 dark:border-slate-800 ml-4 sm:ml-24 space-y-10">
+                    
+                    <!-- Timeline Item 1 -->
+                    <div class="relative pl-6 sm:pl-8 group">
+                        <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-blush-500 border-4 border-white dark:border-slate-900 group-hover:scale-125 transition-transform"></div>
+                        
+                        <span class="hidden sm:inline-block absolute -left-28 top-0 text-[10px] font-bold text-blush-700 dark:text-blush-300 uppercase tracking-wider bg-rose-100/70 dark:bg-blush-950/60 px-2.5 py-1 rounded-full border border-rose-200/60 dark:border-blush-800/40">
+                            PRESENT
+                        </span>
+
+                        <div class="glass-card p-6 rounded-3xl border border-rose-200/70 dark:border-slate-800 space-y-2">
+                            <span class="sm:hidden text-[10px] font-bold text-blush-700 dark:text-blush-300 uppercase tracking-wider block mb-1">PRESENT</span>
+                            <h3 class="text-base font-bold text-slate-900 dark:text-white">Active Portfolio & Project Development</h3>
+                            <p class="text-xs font-semibold text-blush-600 dark:text-blush-400">Self-Directed Cloud & AI Practice</p>
+                            <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed pt-1">
+                                Building hands-on cloud projects on AWS S3, experimenting with LLM APIs, and refining frontend web design capabilities using modern utility frameworks.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 2 -->
+                    <div class="relative pl-6 sm:pl-8 group">
+                        <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-pink-400 border-4 border-white dark:border-slate-900 group-hover:scale-125 transition-transform"></div>
+                        
+                        <span class="hidden sm:inline-block absolute -left-28 top-0 text-[10px] font-bold text-slate-600 dark:text-slate-400 uppercase tracking-wider bg-slate-200/60 dark:bg-slate-800 px-2.5 py-1 rounded-full">
+                            2024
+                        </span>
+
+                        <div class="glass-card p-6 rounded-3xl border border-rose-200/70 dark:border-slate-800 space-y-2">
+                            <span class="sm:hidden text-[10px] font-bold text-slate-600 dark:text-slate-400 uppercase tracking-wider block mb-1">2024</span>
+                            <h3 class="text-base font-bold text-slate-900 dark:text-white">AWS & IBM Intensive Learning Pathways</h3>
+                            <p class="text-xs font-semibold text-blush-600 dark:text-blush-400">Certified Pathways</p>
+                            <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed pt-1">
+                                Completed formal certification essentials in AWS Cloud architecture and IBM AI Foundations. Focused on practical cloud deployment patterns and generative AI workflows.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 3 -->
+                    <div class="relative pl-6 sm:pl-8 group">
+                        <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-rose-300 border-4 border-white dark:border-slate-900 group-hover:scale-125 transition-transform"></div>
+                        
+                        <span class="hidden sm:inline-block absolute -left-28 top-0 text-[10px] font-bold text-slate-600 dark:text-slate-400 uppercase tracking-wider bg-slate-200/60 dark:bg-slate-800 px-2.5 py-1 rounded-full">
+                            TRANSITION
+                        </span>
+
+                        <div class="glass-card p-6 rounded-3xl border border-rose-200/70 dark:border-slate-800 space-y-2">
+                            <span class="sm:hidden text-[10px] font-bold text-slate-600 dark:text-slate-400 uppercase tracking-wider block mb-1">CAREER TRANSITION</span>
+                            <h3 class="text-base font-bold text-slate-900 dark:text-white">Pivoting into Information Technology</h3>
+                            <p class="text-xs font-semibold text-blush-600 dark:text-blush-400">Professional Growth Milestone</p>
+                            <p class="text-xs text-slate-600 dark:text-slate-300 leading-relaxed pt-1">
+                                Leveraged strong problem-solving and communication skills from previous domain experience to embark on a full-time career transition into tech.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
             </div>
+        </section>
+
+        <!-- ========================================================================= -->
+        <!-- 6. CONTACT SECTION & FOOTER (#contact)                                   -->
+        <!-- ========================================================================= -->
+        <section id="contact" class="py-20 relative">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+                    
+                    <!-- Direct Info Column -->
+                    <div class="lg:col-span-5 space-y-6">
+                        <div class="space-y-3">
+                            <h2 class="text-xs font-bold uppercase tracking-widest text-blush-600 dark:text-blush-400">Let's Connect</h2>
+                            <p class="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white">Get in Touch</p>
+                            <p class="text-slate-600 dark:text-slate-400 text-xs sm:text-sm leading-relaxed">
+                                I am actively seeking entry-level opportunities, junior cloud roles, or technical collaborations. Drop me a message!
+                            </p>
+                        </div>
+
+                        <!-- Info Badges -->
+                        <div class="space-y-3 pt-2">
+                            <!-- Email -->
+                            <div class="flex items-center gap-4 p-4 rounded-2xl glass-card border border-rose-200/70 dark:border-slate-800">
+                                <div class="w-10 h-10 rounded-xl bg-blush-500/10 text-blush-600 dark:text-blush-400 flex items-center justify-center text-base flex-shrink-0">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <p class="text-[11px] text-slate-500 dark:text-slate-400 font-medium">Direct Email</p>
+                                    <!-- EDIT: [YOUR_EMAIL_ADDRESS] -->
+                                    <a href="mailto:sample@example.com" class="text-xs font-bold text-slate-900 dark:text-white hover:text-blush-600 transition-colors">sample@example.com</a>
+                                </div>
+                            </div>
+
+                            <!-- Location -->
+                            <div class="flex items-center gap-4 p-4 rounded-2xl glass-card border border-rose-200/70 dark:border-slate-800">
+                                <div class="w-10 h-10 rounded-xl bg-indigo-500/10 text-indigo-600 dark:text-indigo-400 flex items-center justify-center text-base flex-shrink-0">
+                                    <i class="fas fa-location-dot"></i>
+                                </div>
+                                <div>
+                                    <p class="text-[11px] text-slate-500 dark:text-slate-400 font-medium">Location</p>
+                                    <!-- EDIT: [YOUR_LOCATION] -->
+                                    <p class="text-xs font-bold text-slate-900 dark:text-white">Open to Remote & Hybrid Roles</p>
+                                </div>
+                            </div>
+
+                            <!-- Social Profiles -->
+                            <div class="flex items-center gap-4 p-4 rounded-2xl glass-card border border-rose-200/70 dark:border-slate-800">
+                                <div class="w-10 h-10 rounded-xl bg-pink-500/10 text-pink-600 dark:text-pink-400 flex items-center justify-center text-base flex-shrink-0">
+                                    <i class="fas fa-share-nodes"></i>
+                                </div>
+                                <div>
+                                    <p class="text-[11px] text-slate-500 dark:text-slate-400 font-medium">Social Profiles</p>
+                                    <div class="flex items-center gap-3 pt-0.5">
+                                        <!-- EDIT: [YOUR_GITHUB_URL] -->
+                                        <a href="https://github.com" target="_blank" rel="noopener" class="text-slate-700 dark:text-slate-300 hover:text-blush-600 font-semibold text-xs">GitHub ↗</a>
+                                        <!-- EDIT: [YOUR_LINKEDIN_URL] -->
+                                        <a href="https://linkedin.com" target="_blank" rel="noopener" class="text-slate-700 dark:text-slate-300 hover:text-blush-600 font-semibold text-xs">LinkedIn ↗</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Contact Form -->
+                    <div class="lg:col-span-7">
+                        <!-- EDIT: [INSERT_FORMSPREE_URL] e.g. https://formspree.io/f/your_form_id -->
+                        <form id="contact-form" action="https://formspree.io/f/placeholder" method="POST" class="glass-card p-6 sm:p-8 rounded-3xl border border-rose-200/80 dark:border-slate-800 space-y-5 shadow-sm">
+                            <h3 class="text-lg font-bold text-slate-900 dark:text-white">Send a Message</h3>
+                            
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                                <div>
+                                    <label for="name" class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1.5">Your Name</label>
+                                    <input type="text" id="name" name="name" required placeholder="Name" class="w-full px-4 py-2.5 rounded-xl bg-white/80 dark:bg-slate-900 border border-rose-200 dark:border-slate-800 text-slate-900 dark:text-white text-xs focus:outline-none focus:ring-2 focus:ring-blush-400 transition-all">
+                                </div>
+                                <div>
+                                    <label for="email" class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1.5">Your Email</label>
+                                    <input type="email" id="email" name="email" required placeholder="sample@example.com" class="w-full px-4 py-2.5 rounded-xl bg-white/80 dark:bg-slate-900 border border-rose-200 dark:border-slate-800 text-slate-900 dark:text-white text-xs focus:outline-none focus:ring-2 focus:ring-blush-400 transition-all">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label for="subject" class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1.5">Subject</label>
+                                <input type="text" id="subject" name="subject" required placeholder="Inquiry / Entry-Level Role Opportunity" class="w-full px-4 py-2.5 rounded-xl bg-white/80 dark:bg-slate-900 border border-rose-200 dark:border-slate-800 text-slate-900 dark:text-white text-xs focus:outline-none focus:ring-2 focus:ring-blush-400 transition-all">
+                            </div>
+
+                            <div>
+                                <label for="message" class="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1.5">Message</label>
+                                <textarea id="message" name="message" rows="4" required placeholder="Write your message here..." class="w-full px-4 py-2.5 rounded-xl bg-white/80 dark:bg-slate-900 border border-rose-200 dark:border-slate-800 text-slate-900 dark:text-white text-xs focus:outline-none focus:ring-2 focus:ring-blush-400 transition-all resize-none"></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full py-3 rounded-2xl bg-blush-500 hover:bg-blush-600 text-white font-semibold text-xs uppercase tracking-wider shadow-md shadow-blush-200 dark:shadow-none transition-all flex items-center justify-center gap-2">
+                                <i class="fas fa-paper-plane"></i> Send Message
+                            </button>
+                            
+                            <!-- Form Feedback Banner -->
+                            <div id="form-status" class="hidden p-3 rounded-xl bg-emerald-50 dark:bg-emerald-950/50 border border-emerald-200 dark:border-emerald-800 text-emerald-800 dark:text-emerald-300 text-xs font-medium text-center">
+                                Thank you! Your message has been sent.
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-6 border-t border-rose-100 dark:border-slate-800 bg-white/60 dark:bg-slate-950 text-xs text-slate-500 dark:text-slate-400">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-3 text-center sm:text-left">
+            <p>© <span id="year"></span> Janelle Vance. All rights reserved.</p>
+            <p class="flex items-center justify-center gap-1.5">
+                Crafted with <span class="text-rose-500">♥</span> & commitment • Hosted on <a href="https://pages.github.com" target="_blank" class="text-blush-600 dark:text-blush-400 font-semibold hover:underline">GitHub Pages</a>
+            </p>
         </div>
     </footer>
 
-    <!-- ========================================== -->
-    <!-- 7. JAVASCRIPT & DATA CONTROLLER            -->
-    <!-- ========================================== -->
+    <!-- ========================================================================= -->
+    <!-- JAVASCRIPT LOGIC & DYNAMIC DATA CONFIGURATION                             -->
+    <!-- ========================================================================= -->
     <script>
-        /* =================================================================
-           PROJECTS DATA SCHEMA
-           EDIT: Add or modify your projects below!
-           ================================================================= */
+        // Set dynamic year in footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        /* -------------------------------------------------------------------------
+         * PROJECTS DATA ARRAY CONFIGURATION
+         * Easily edit or replace this array with your own real project information
+         * ------------------------------------------------------------------------- */
         const projectsData = [
             {
-                title: "AWS Cloud Static Host Solution",
-                category: "Cloud Architecture",
-                description: "Deployed a high-availability static site architecture utilizing AWS S3 bucket web hosting, CloudFront CDN distribution for edge caching, and Route 53 for robust DNS routing.",
-                tags: ["AWS S3", "CloudFront", "Route 53", "HTML/Tailwind"],
-                /* EDIT: Project image URL */
-                image: "[INSERT_PROJECT_1_IMAGE_URL]",
+                id: 1,
+                title: "AWS Cloud Resource Showcase",
+                category: "Cloud",
+                description: "Static website infrastructure built and hosted on Amazon S3 with CloudFront CDN distribution and custom bucket policies.",
+                tags: ["AWS S3", "CloudFront", "HTML5", "Git"],
+                /* EDIT: [INSERT_PROJECT_IMAGE_URL] */
+                image: "[INSERT_PROJECT_IMAGE_URL]",
                 links: {
-                    /* EDIT: Project URLs */
-                    demo: "[INSERT_PROJECT_1_DEMO_URL]",
-                    github: "[INSERT_PROJECT_1_GITHUB_URL]",
-                    docs: "[INSERT_PROJECT_1_DOCS_URL]"
+                    /* EDIT: [INSERT_PROJECT_DEMO_URL] */
+                    demo: "[INSERT_PROJECT_DEMO_URL]",
+                    /* EDIT: [INSERT_PROJECT_GITHUB_URL] */
+                    github: "[INSERT_PROJECT_GITHUB_URL]",
+                    /* EDIT: [INSERT_PROJECT_DOCS_URL] */
+                    docs: "[INSERT_PROJECT_DOCS_URL]"
                 }
             },
             {
-                title: "AI Document Summarization Assistant",
-                category: "AI & Automation",
-                description: "Built a browser-based AI tool applying IBM AI concepts to parse dense engineering documents and generate concise, structured summaries via REST API integration with an LLM backend.",
+                id: 2,
+                title: "AI-Powered Productivity Assistant",
+                category: "AI",
+                description: "Interactive browser tool leveraging LLM API endpoints and IBM AI workflow concepts for automated text summaries.",
                 tags: ["IBM AI", "JavaScript", "Tailwind CSS", "REST API"],
-                /* EDIT: Project image URL */
-                image: "[INSERT_PROJECT_2_IMAGE_URL]",
+                /* EDIT: [INSERT_PROJECT_IMAGE_URL] */
+                image: "[INSERT_PROJECT_IMAGE_URL]",
                 links: {
-                    /* EDIT: Project URLs */
-                    demo: "[INSERT_PROJECT_2_DEMO_URL]",
-                    github: "[INSERT_PROJECT_2_GITHUB_URL]",
+                    /* EDIT: [INSERT_PROJECT_DEMO_URL] */
+                    demo: "[INSERT_PROJECT_DEMO_URL]",
+                    /* EDIT: [INSERT_PROJECT_GITHUB_URL] */
+                    github: "[INSERT_PROJECT_GITHUB_URL]",
+                    /* EDIT: [INSERT_PROJECT_DOCS_URL] */
+                    docs: ""
+                }
+            },
+            {
+                id: 3,
+                title: "Personal Portfolio on GitHub Pages",
+                category: "Web",
+                description: "Responsive, soft aesthetic single-page portfolio site crafted with Tailwind CSS and vanilla JavaScript for zero-config hosting.",
+                tags: ["Tailwind CSS", "JavaScript", "GitHub Pages", "UX Design"],
+                /* EDIT: [INSERT_PROJECT_IMAGE_URL] */
+                image: "[INSERT_PROJECT_IMAGE_URL]",
+                links: {
+                    /* EDIT: [INSERT_PROJECT_DEMO_URL] */
+                    demo: "https://example.com",
+                    /* EDIT: [INSERT_PROJECT_GITHUB_URL] */
+                    github: "https://github.com",
+                    /* EDIT: [INSERT_PROJECT_DOCS_URL] */
                     docs: ""
                 }
             }
         ];
 
-        /* =================================================================
-           PROJECT RENDERING LOGIC
-           ================================================================= */
-        function renderProjects() {
-            const grid = document.getElementById('projectsGrid');
-            grid.innerHTML = projectsData.map(project => {
-                
-                // Helper to build links only if they aren't placeholder templates
-                const renderLink = (url, icon, text, primary = false) => {
-                    if(!url || url.includes('[INSERT_')) return '';
-                    const baseClass = primary 
-                        ? "px-4 py-2 rounded-lg bg-terracotta-800 hover:bg-terracotta-900 text-white text-xs font-bold transition-colors shadow-sm flex items-center gap-2"
-                        : "px-4 py-2 rounded-lg bg-stone-200 hover:bg-stone-300 dark:bg-stone-800 dark:hover:bg-stone-700 text-stone-800 dark:text-white text-xs font-bold transition-colors flex items-center gap-2";
-                    return `<a href="${url}" target="_blank" class="${baseClass}"><i class="${icon}"></i> ${text}</a>`;
-                };
+        /* Render projects into grid */
+        function renderProjects(categoryFilter = 'all') {
+            const container = document.getElementById('projects-container');
+            container.innerHTML = '';
 
-                // Fallback image if placeholder
-                const imgSrc = project.image.includes('[INSERT_') 
-                    ? 'https://placehold.co/600x400/e7e2d7/3d3429?text=Project+Preview' 
+            const filtered = categoryFilter === 'all' 
+                ? projectsData 
+                : projectsData.filter(p => p.category === categoryFilter);
+
+            filtered.forEach(project => {
+                const card = document.createElement('div');
+                card.className = 'glass-card rounded-3xl overflow-hidden border border-rose-200/70 dark:border-slate-800 flex flex-col justify-between hover:shadow-xl hover:-translate-y-1 transition-all group';
+
+                // Build links HTML conditionally
+                let linksHTML = '';
+                if (project.links.demo && !project.links.demo.includes('INSERT_')) {
+                    linksHTML += `<a href="${project.links.demo}" target="_blank" rel="noopener noreferrer" class="px-3 py-1.5 rounded-xl bg-blush-500 hover:bg-blush-600 text-white font-semibold text-[11px] transition-colors flex items-center gap-1">Live Demo <i class="fas fa-arrow-up-right-from-square text-[9px]"></i></a>`;
+                } else {
+                    linksHTML += `<a href="#" class="px-3 py-1.5 rounded-xl bg-blush-500/80 text-white font-semibold text-[11px] flex items-center gap-1 cursor-not-allowed opacity-80" onclick="event.preventDefault()">Live Demo ↗</a>`;
+                }
+
+                if (project.links.github && !project.links.github.includes('INSERT_')) {
+                    linksHTML += `<a href="${project.links.github}" target="_blank" rel="noopener noreferrer" class="px-3 py-1.5 rounded-xl bg-slate-900 dark:bg-slate-800 hover:bg-slate-800 dark:hover:bg-slate-700 text-white font-semibold text-[11px] transition-colors flex items-center gap-1"><i class="fab fa-github"></i> Code</a>`;
+                } else {
+                    linksHTML += `<a href="#" class="px-3 py-1.5 rounded-xl bg-slate-800 text-white font-semibold text-[11px] flex items-center gap-1 cursor-not-allowed opacity-80" onclick="event.preventDefault()"><i class="fab fa-github"></i> Code</a>`;
+                }
+
+                if (project.links.docs && !project.links.docs.includes('INSERT_')) {
+                    linksHTML += `<a href="${project.links.docs}" target="_blank" rel="noopener noreferrer" class="px-3 py-1.5 rounded-xl bg-rose-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300 hover:bg-rose-200 font-semibold text-[11px] transition-colors flex items-center gap-1"><i class="fas fa-book text-[10px]"></i> Docs</a>`;
+                }
+
+                // Handle image fallback gracefully
+                const imageSrc = project.image.includes('INSERT_') 
+                    ? 'https://placehold.co/600x400/fff1f2/be123c?text=Project+Preview' 
                     : project.image;
 
-                return `
-                    <div class="glass-card rounded-[2rem] border border-stone-200 dark:border-stone-800 overflow-hidden shadow-lg hover:-translate-y-1.5 transition-transform duration-300 flex flex-col group">
-                        <!-- Image Area -->
-                        <div class="relative h-56 sm:h-64 bg-stone-300 dark:bg-stone-900 overflow-hidden">
-                            <img src="${imgSrc}" alt="${project.title}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
-                            <div class="absolute top-4 left-4 px-3 py-1.5 rounded-full bg-white/90 dark:bg-[#1c1917]/90 backdrop-blur-md text-stone-900 dark:text-white text-[10px] font-bold tracking-wider uppercase border border-stone-200/50 dark:border-stone-700/50 shadow-sm">
+                card.innerHTML = `
+                    <div>
+                        <!-- Cover Image Placeholder Container -->
+                        <div class="relative h-44 overflow-hidden bg-slate-900">
+                            <!-- EDIT: [INSERT_PROJECT_IMAGE_URL] -->
+                            <img src="${imageSrc}" onerror="this.onerror=null; this.src='https://placehold.co/600x400/fff1f2/be123c?text=Project+Preview';" alt="${project.title}" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <span class="absolute top-3 left-3 px-3 py-1 rounded-full bg-slate-950/80 backdrop-blur-md text-white text-[10px] font-bold tracking-wider uppercase border border-white/10">
                                 ${project.category}
-                            </div>
+                            </span>
                         </div>
 
-                        <!-- Content Area -->
-                        <div class="p-6 sm:p-8 flex-1 flex flex-col justify-between space-y-6">
-                            <div class="space-y-3">
-                                <h3 class="font-extrabold text-stone-900 dark:text-white text-xl sm:text-2xl">${project.title}</h3>
-                                <p class="text-sm text-stone-600 dark:text-stone-400 leading-relaxed font-medium">${project.description}</p>
-                            </div>
-
-                            <div class="space-y-5">
-                                <!-- Tags -->
-                                <div class="flex flex-wrap gap-2">
-                                    ${project.tags.map(tag => `<span class="px-2.5 py-1 rounded-lg bg-stone-100 dark:bg-stone-900 border border-stone-200 dark:border-stone-800 text-stone-700 dark:text-stone-300 text-[10px] font-bold uppercase tracking-wider">${tag}</span>`).join('')}
-                                </div>
-                                
-                                <!-- Links -->
-                                <div class="flex flex-wrap gap-3 pt-2">
-                                    ${renderLink(project.links.demo, "fa-solid fa-arrow-up-right-from-square", "Live Demo", true)}
-                                    ${renderLink(project.links.github, "fa-brands fa-github text-sm", "Source Code")}
-                                    ${renderLink(project.links.docs, "fa-solid fa-file-lines", "Case Study")}
-                                    
-                                    ${(!project.links.demo || project.links.demo.includes('[INSERT_')) && 
-                                      (!project.links.github || project.links.github.includes('[INSERT_')) ? 
-                                      `<span class="text-xs font-semibold text-stone-400 italic py-2">Links coming soon. Update placeholders in code.</span>` : ''}
-                                </div>
+                        <!-- Content Body -->
+                        <div class="p-6 space-y-3">
+                            <h3 class="text-base font-bold text-slate-900 dark:text-white group-hover:text-blush-600 transition-colors">${project.title}</h3>
+                            <p class="text-slate-600 dark:text-slate-400 text-xs leading-relaxed">${project.description}</p>
+                            
+                            <!-- Tech Stack Pills -->
+                            <div class="flex flex-wrap gap-1.5 pt-1">
+                                ${project.tags.map(tag => `<span class="px-2.5 py-0.5 rounded-lg bg-rose-50 dark:bg-slate-800 text-slate-600 dark:text-slate-300 text-[11px] font-medium">${tag}</span>`).join('')}
                             </div>
                         </div>
                     </div>
+
+                    <!-- Action Links Placeholder Container -->
+                    <div class="px-6 pb-6 pt-2 border-t border-rose-100/80 dark:border-slate-800 flex flex-wrap items-center gap-2">
+                        ${linksHTML}
+                    </div>
                 `;
+
+                container.appendChild(card);
             });
         }
 
-        /* =================================================================
-           SKILLS FILTER LOGIC
-           ================================================================= */
-        function initSkillsFilter() {
-            const buttons = document.querySelectorAll('.skill-filter');
-            const cards = document.querySelectorAll('.skill-card');
+        /* Project Category Filtering */
+        function filterProjects(category) {
+            document.querySelectorAll('.project-filter-btn').forEach(btn => {
+                if (btn.getAttribute('data-filter') === category) {
+                    btn.className = 'project-filter-btn active px-3.5 py-1.5 rounded-xl text-xs font-semibold bg-blush-500 text-white shadow-sm transition-all';
+                } else {
+                    btn.className = 'project-filter-btn px-3.5 py-1.5 rounded-xl text-xs font-semibold bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-rose-100/50 dark:hover:bg-slate-700 transition-all';
+                }
+            });
+            renderProjects(category);
+        }
 
-            buttons.forEach(button => {
-                button.addEventListener('click', () => {
-                    // Update active button styling
-                    buttons.forEach(btn => {
-                        btn.classList.remove('bg-terracotta-800', 'text-white', 'shadow-md');
-                        btn.classList.add('bg-white', 'dark:bg-stone-900', 'text-stone-700', 'dark:text-stone-300');
-                    });
-                    button.classList.remove('bg-white', 'dark:bg-stone-900', 'text-stone-700', 'dark:text-stone-300');
-                    button.classList.add('bg-terracotta-800', 'text-white', 'shadow-md');
+        /* Skill Tab Category Filtering */
+        function filterSkills(category) {
+            document.querySelectorAll('.skill-tab-btn').forEach(btn => {
+                if (btn.getAttribute('data-tab') === category) {
+                    btn.className = 'skill-tab-btn active px-4 py-2 rounded-2xl text-xs font-semibold transition-all bg-blush-500 text-white shadow-sm';
+                } else {
+                    btn.className = 'skill-tab-btn px-4 py-2 rounded-2xl text-xs font-semibold transition-all bg-white dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-rose-100/50 dark:hover:bg-slate-700';
+                }
+            });
 
-                    // Filter cards
-                    const filter = button.getAttribute('data-filter');
-                    cards.forEach(card => {
-                        if (filter === 'all' || card.getAttribute('data-category') === filter) {
-                            card.style.display = 'block';
-                            // small animation trick
-                            card.style.opacity = '0';
-                            setTimeout(() => card.style.opacity = '1', 50);
-                        } else {
-                            card.style.display = 'none';
-                        }
-                    });
-                });
+            document.querySelectorAll('.skill-card').forEach(card => {
+                if (category === 'all' || card.getAttribute('data-category') === category) {
+                    card.classList.remove('hidden');
+                } else {
+                    card.classList.add('hidden');
+                }
             });
         }
 
-        /* =================================================================
-           THEME TOGGLE & MOBILE MENU
-           ================================================================= */
-        const themeBtn = document.getElementById('themeToggle');
-        const iconDark = document.getElementById('themeIconDark');
-        const iconLight = document.getElementById('themeIconLight');
-        
-        function updateThemeUI(isDark) {
-            if (isDark) {
-                document.documentElement.classList.add('dark');
-                iconDark.classList.add('hidden');
-                iconLight.classList.remove('hidden');
+        /* Dark Mode Persistence */
+        const themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
+        const themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');
+        const themeToggleBtn = document.getElementById('theme-toggle');
+
+        if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+            themeToggleLightIcon.classList.remove('hidden');
+        } else {
+            document.documentElement.classList.remove('dark');
+            themeToggleDarkIcon.classList.remove('hidden');
+        }
+
+        themeToggleBtn.addEventListener('click', function() {
+            themeToggleDarkIcon.classList.toggle('hidden');
+            themeToggleLightIcon.classList.toggle('hidden');
+
+            if (localStorage.getItem('color-theme')) {
+                if (localStorage.getItem('color-theme') === 'light') {
+                    document.documentElement.classList.add('dark');
+                    localStorage.setItem('color-theme', 'dark');
+                } else {
+                    document.documentElement.classList.remove('dark');
+                    localStorage.setItem('color-theme', 'light');
+                }
             } else {
-                document.documentElement.classList.remove('dark');
-                iconLight.classList.add('hidden');
-                iconDark.classList.remove('hidden');
+                if (document.documentElement.classList.contains('dark')) {
+                    document.documentElement.classList.remove('dark');
+                    localStorage.setItem('color-theme', 'light');
+                } else {
+                    document.documentElement.classList.add('dark');
+                    localStorage.setItem('color-theme', 'dark');
+                }
             }
-        }
-
-        function initTheme() {
-            const isDark = localStorage.getItem('theme') === 'dark' || 
-                           (!localStorage.getItem('theme') && window.matchMedia('(prefers-color-scheme: dark)').matches);
-            updateThemeUI(isDark);
-        }
-
-        themeBtn.addEventListener('click', () => {
-            const willBeDark = !document.documentElement.classList.contains('dark');
-            updateThemeUI(willBeDark);
-            localStorage.setItem('theme', willBeDark ? 'dark' : 'light');
         });
 
-        // Mobile Menu
-        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
-        const mobileMenu = document.getElementById('mobileMenu');
-        const mobileLinks = document.querySelectorAll('.mobile-link');
+        /* Mobile Drawer Handler */
+        const mobileBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
 
-        mobileMenuBtn.addEventListener('click', () => {
+        mobileBtn.addEventListener('click', () => {
             mobileMenu.classList.toggle('hidden');
         });
 
-        mobileLinks.forEach(link => {
+        document.querySelectorAll('.mobile-nav-link').forEach(link => {
             link.addEventListener('click', () => {
                 mobileMenu.classList.add('hidden');
             });
         });
 
-        /* Initialize everything on load */
-        document.addEventListener('DOMContentLoaded', () => {
-            initTheme();
-            initSkillsFilter();
-            renderProjects();
+        /* Contact Form Event Handler */
+        const contactForm = document.getElementById('contact-form');
+        const formStatus = document.getElementById('form-status');
+
+        contactForm.addEventListener('submit', function(e) {
+            if (contactForm.action.includes('placeholder')) {
+                e.preventDefault();
+                formStatus.classList.remove('hidden');
+                contactForm.reset();
+                setTimeout(() => {
+                    formStatus.classList.add('hidden');
+                }, 5000);
+            }
         });
+
+        // Initialize projects on window load
+        window.onload = function() {
+            renderProjects('all');
+        };
     </script>
 </body>
 </html>
