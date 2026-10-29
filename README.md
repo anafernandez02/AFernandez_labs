@@ -26,7 +26,7 @@
 
 ## 🙋‍♂️ About Me
 
-Hello! I’m **[Your Name]**, an aspiring **Cloud Engineer & AI Specialist** focused on bridging the gap between scalable cloud infrastructure and cutting-edge artificial intelligence.
+Hello! I’m **[Ana Fernandez]**, an aspiring **Cloud Engineer & AI Specialist** focused on bridging the gap between scalable cloud infrastructure and cutting-edge artificial intelligence.
 
 - ⚡ **What I Do:** Build automated infrastructure with **Terraform/Docker**, construct event-driven serverless systems on **AWS/GCP**, and integrate enterprise AI solutions using **LangChain, Vector DBs, and LLMs**.
 - 🎯 **Current Focus:** Optimizing RAG (Retrieval-Augmented Generation) pipelines for real-time response and automated cloud infrastructure deployments via CI/CD.
